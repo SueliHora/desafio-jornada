@@ -16,7 +16,7 @@ body:
         | "O documento emitido pode ser corrigido depois ou é definitivo?" | "Qual banco vetorial vocês recomendam?" |
         | "Teto de custo por atendimento é por conversa ou por mês?" | "Como faço o teste automatizado da G8?" |
 
-        Dúvida técnica (o **como** construir) vai em Discussions, na categoria "Dúvidas técnicas".
+        Dúvida técnica vai em Discussions, na categoria **"Como construir"**.
 
   - type: checkboxes
     id: duplicada

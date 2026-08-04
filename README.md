@@ -45,7 +45,7 @@ Quem cumpre os três não está fazendo favor para a Jornada. Está construindo 
 ## Uma comunidade que se ajuda
 
 - **Dúvidas sobre o pedido do desafio?** Abra uma issue com o modelo "Pergunta ao cliente" no desafio do mês. As respostas vêm na voz do cliente e valem para todos
-- **Dúvidas técnicas ou troca de ideias?** Use as Discussions deste repositório. Ajudar um colega com uma decisão de arquitetura é uma das melhores formas de aprender
+- **Dúvidas técnicas ou troca de ideias?** Use as Discussions, na categoria **Como construir**. Respostas podem ser marcadas como solução, então a sua pergunta fica de herança para quem começar depois de você. Ajudar um colega com uma decisão de arquitetura é uma das melhores formas de aprender
 - **Viu um projeto legal na galeria?** Abra uma issue no repositório do colega, comente, sugira, elogie. Feedback é presente
 - **Achou um erro neste repositório?** Pull requests de correção são bem-vindos e passam pelo mesmo fluxo de revisão
 
