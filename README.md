@@ -1,7 +1,7 @@
 <div align="center">
   <img src="./assets/banner.svg" alt="Jornada de Dados — Projetos reais de IA e Dados" width="100%"/>
 
-  [**Comunidade**](https://suajornadadedados.com.br/) • [**Desafio do mês**](desafio-vendas/README.md) • [**Como submeter**](COMO-SUBMETER.md) • [**Discussions**](../../discussions)
+  [**Desafio do mês**](desafio-vendas/README.md) • [**Como submeter**](COMO-SUBMETER.md) • [**Tirar uma dúvida**](https://github.com/suajornadadedados/desafio-jornada/discussions) • [**Comunidade**](https://suajornadadedados.com.br/)
 </div>
 
 # Desafios Jornada de Dados: Projetos Reais de IA e Dados
@@ -9,6 +9,16 @@
 Bem-vindo ao repositório de desafios da comunidade Jornada de Dados. Aqui, todo mês, lançamos um projeto real de engenharia para você construir do zero: com discovery, documentação, decisões de arquitetura, código, qualidade automatizada e processo de trabalho profissional.
 
 Este não é um repositório de exercícios. É um repositório de **portfólios em construção** e de uma comunidade que se ajuda. Cada projeto que você constrói aqui é um projeto que você mostra em entrevista, publica no LinkedIn e defende com argumentos, porque cada decisão foi sua.
+
+## Comece por aqui
+
+Se é a sua primeira vez neste repositório, faça nesta ordem:
+
+1. **Leia o desafio do mês:** [Agente de Vendas de Ponta a Ponta](desafio-vendas/README.md). Lá estão o pedido do cliente, as garantias que o produto precisa oferecer e as datas
+2. **Assista ao workshop** no [canal da Jornada de Dados](https://www.youtube.com/@JornadaDeDados). Ele mostra o método aplicado em um projeto de exemplo, do começo ao fim
+3. **Escolha o seu domínio e comece a construir** no seu próprio repositório. Não precisa esperar estar pronto para aparecer: discovery bem documentado já é uma submissão válida
+
+Travou em algo? A seção [Onde falar com a comunidade](#onde-falar-com-a-comunidade) diz exatamente onde perguntar.
 
 ## Como funciona
 
@@ -25,43 +35,66 @@ Este não é um repositório de exercícios. É um repositório de **portfólios
 | Mês | Projeto | Status |
 |---|---|---|
 | Agosto/2026 | [Agente de Vendas de Ponta a Ponta](desafio-vendas/README.md) | **Aberto** |
-| Setembro/2026 | Em votação com a comunidade | Em breve |
+| Setembro/2026 | [Em votação com a comunidade](https://github.com/suajornadadedados/desafio-jornada/discussions/categories/ideias) | Em breve |
 | Outubro/2026 | A anunciar | Em breve |
 | Novembro/2026 | A anunciar | Em breve |
 | Dezembro/2026 | A anunciar | Em breve |
 
 Cada pasta de mês contém o README do desafio (o pedido, as garantias, os requisitos e as datas) e a pasta de projetos com a galeria da comunidade.
 
+## Como submeter o seu projeto
+
+O seu projeto completo vive no **seu** repositório. O que entra aqui é só o **cartão**: uma pasta com o seu usuário e um README de apresentação que aponta para o seu repositório.
+
+| Fica no SEU repositório | Entra AQUI, na galeria |
+|---|---|
+| Código, documentação, histórico de commits, CI | Uma pasta com o seu usuário, um README de apresentação e uma imagem opcional |
+
+O caminho é o mesmo de qualquer contribuição de código no mundo real:
+
+**fork → branch → cartão → pull request → revisão → merge**
+
+Ao abrir o pull request, um modelo já aparece preenchido com o checklist da galeria. Se todos os itens estiverem marcados, a revisão é rápida.
+
+O passo a passo completo, o modelo do cartão e as regras da galeria estão em **[COMO-SUBMETER.md](COMO-SUBMETER.md)**. Leva uns 20 minutos.
+
 ## A regra da visibilidade
 
 Projeto guardado na gaveta não muda carreira. Por isso, participar do desafio inclui três compromissos de publicação. Eles existem por um único motivo: **trazer visibilidade para você.**
 
 - [ ] **Publique no GitHub.** Seu projeto deve estar em um repositório público no seu perfil, com README próprio, documentação e histórico de commits visível. É o seu portfólio técnico: é para lá que recrutadores e colegas vão olhar
-- [ ] **Publique no LinkedIn.** Ao submeter seu cartão na galeria, publique também um post contando o projeto ou a experiência: o que construiu, uma decisão difícil que tomou, um aprendizado honesto. Marque a Jornada de Dados, porque a gente adora repostar projeto de aluno, e cada repost amplia o seu alcance
-- [ ] **Publique na plataforma da Jornada.** Compartilhe seu projeto na comunidade da plataforma para receber feedback dos colegas e dos instrutores, e para inspirar quem está começando o desafio depois de você
+- [ ] **Publique no LinkedIn.** Ao submeter seu cartão na galeria, publique também um post contando o projeto ou a experiência: o que construiu, uma decisão difícil que tomou, um aprendizado honesto. Marque a [Jornada de Dados](https://www.linkedin.com/company/jornadadedados/posts/?feedView=all), porque a gente adora repostar projeto de aluno, e cada repost amplia o seu alcance
+- [ ] **Publique na plataforma da Jornada.** Compartilhe seu projeto na [comunidade da plataforma](https://suajornadadedados.com.br/) para receber feedback dos colegas e dos instrutores, e para inspirar quem está começando o desafio depois de você
 
 Quem cumpre os três não está fazendo favor para a Jornada. Está construindo presença pública como engenheiro, com prova de trabalho real. A diferença entre quem é visto no mercado e quem não é raramente está na competência: está na visibilidade da competência.
 
-## Uma comunidade que se ajuda
+## Onde falar com a comunidade
 
-- **Dúvidas sobre o pedido do desafio?** Abra uma issue com o modelo "Pergunta ao cliente" no desafio do mês. As respostas vêm na voz do cliente e valem para todos
-- **Dúvidas técnicas ou troca de ideias?** Use as Discussions, na categoria **Como construir**. Respostas podem ser marcadas como solução, então a sua pergunta fica de herança para quem começar depois de você. Ajudar um colega com uma decisão de arquitetura é uma das melhores formas de aprender
-- **Viu um projeto legal na galeria?** Abra uma issue no repositório do colega, comente, sugira, elogie. Feedback é presente
-- **Achou um erro neste repositório?** Pull requests de correção são bem-vindos e passam pelo mesmo fluxo de revisão
+Cada tipo de conversa tem um lugar. Achar o lugar certo faz a sua resposta chegar mais rápido — e faz a resposta servir também para quem vier depois de você.
 
-## Hall dos Construtores
+| O que você quer | Onde ir |
+|---|---|
+| Entender **o que o cliente quis dizer** (escopo, garantias, prazos) | Issue → [**Pergunta ao cliente**](https://github.com/suajornadadedados/desafio-jornada/issues/new?template=pergunta-ao-cliente.yml) |
+| Saber **como construir** (arquitetura, stack, um erro que não passa) | Discussion → [**Como construir**](https://github.com/suajornadadedados/desafio-jornada/discussions/new?category=como-construir) |
+| **Mostrar o que já construiu** e pedir feedback dos colegas | Discussion → [**Mostre seu projeto**](https://github.com/suajornadadedados/desafio-jornada/discussions/new?category=mostre-seu-projeto) |
+| **Submeter oficialmente** o seu cartão para a galeria | [Pull request](COMO-SUBMETER.md) |
+| **Travou na submissão** (fork, branch, pasta, cartão, PR) | Issue → [**Dúvida na submissão**](https://github.com/suajornadadedados/desafio-jornada/issues/new?template=duvida-na-submissao.yml) |
+| **Propor o desafio** de um próximo mês | Discussion → [**Ideias**](https://github.com/suajornadadedados/desafio-jornada/discussions/new?category=ideias) |
+| Avisar sobre **erro no material** (link quebrado, texto confuso) | Issue → [**Erro no material**](https://github.com/suajornadadedados/desafio-jornada/issues/new?template=erro-no-material.yml) ou um pull request de correção |
+| **Elogiar ou comentar** o projeto de um colega | Issue no repositório dele. Feedback é presente |
 
-Quem participa de múltiplos meses entra aqui, com nome e link para os projetos. Constância é o que separa portfólio de exercício.
+Duas diferenças que vale entender, porque são a fonte da maior parte da confusão:
 
-| Construtor | Projetos concluídos | Meses |
-|---|---|---|
-| A galeria abre em 11/08/2026 | | |
+- **Issue é para pergunta com resposta oficial. Discussion é para conversa.** Se a sua dúvida é sobre *o que* o desafio pede, a resposta vem na voz do cliente e vale para todo mundo, então é issue. Se é sobre *como* você vai construir, é conversa entre colegas, então é discussion
+- **Discussion não substitui a submissão.** Postar o projeto em "Mostre seu projeto" serve para receber feedback enquanto você constrói. Para entrar na galeria oficial, é pull request
+
+Na categoria **Como construir** as respostas podem ser marcadas como solução. Antes de perguntar, dê uma busca: talvez a sua dúvida já esteja resolvida por alguém que passou por ela no mês passado.
 
 ## Links da Jornada de Dados
 
-- Plataforma: adicione aqui o link da plataforma
-- Canal no YouTube: adicione aqui o link do canal
-- LinkedIn: adicione aqui o link da página
+- **Plataforma e comunidade:** [suajornadadedados.com.br](https://suajornadadedados.com.br/)
+- **Canal no YouTube:** [@JornadaDeDados](https://www.youtube.com/@JornadaDeDados)
+- **LinkedIn:** [Jornada de Dados](https://www.linkedin.com/company/jornadadedados/posts/?feedView=all)
 
 Bons projetos. E lembre da regra que costura tudo o que fazemos por aqui:
 

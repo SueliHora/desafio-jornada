@@ -106,4 +106,6 @@ o que este projeto mudou na sua forma de trabalhar.
 
 Projetos na galeria podem ser comentados na live exclusiva para alunos, e os que mais se destacarem aparecem no vídeo de encerramento do mês no canal da Jornada de Dados e nas nossas redes, sempre com os devidos créditos. Compartilhe o seu cartão no LinkedIn marcando a Jornada: a gente adora repostar projeto de aluno.
 
-Dúvidas sobre a submissão? Abra uma issue neste repositório. Dúvidas sobre o desafio em si? Use o modelo de issue "Pergunta ao cliente" e leia o README do mês correspondente.
+**Travou em algum passo?** Abra uma issue com o modelo [**Dúvida na submissão**](https://github.com/suajornadadedados/desafio-jornada/issues/new?template=duvida-na-submissao.yml). Se o seu PR já está aberto, comente nele mesmo: fica tudo no mesmo lugar.
+
+**Dúvida sobre o desafio em si?** Se é sobre *o que* o cliente pediu, use o modelo [**Pergunta ao cliente**](https://github.com/suajornadadedados/desafio-jornada/issues/new?template=pergunta-ao-cliente.yml). Se é sobre *como* construir, use a categoria [**Como construir**](https://github.com/suajornadadedados/desafio-jornada/discussions/new?category=como-construir) nas Discussions.
