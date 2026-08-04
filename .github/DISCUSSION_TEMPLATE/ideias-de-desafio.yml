@@ -1,0 +1,39 @@
+body:
+  - type: markdown
+    attributes:
+      value: |
+        O desafio de setembro entra em votação com a comunidade. Proponha aqui um tema — e vote nas propostas dos colegas com 👍 na discussão.
+
+        Um bom desafio não é "um projeto legal". É um projeto em que **errar é inaceitável em algum ponto**, porque é isso que obriga a resolver engenharia de verdade em vez de plugar uma API.
+
+  - type: input
+    id: titulo
+    attributes:
+      label: O desafio em uma frase
+      placeholder: "Construa um sistema de triagem que decide o que vai para um humano"
+    validations:
+      required: true
+
+  - type: textarea
+    id: pedido
+    attributes:
+      label: O pedido do cliente
+      description: Escreva na voz de um dono de negócio. O que ele quer, e de que ele tem medo? Cliente fala de resultado e de medo, nunca de framework.
+    validations:
+      required: true
+
+  - type: textarea
+    id: irreversivel
+    attributes:
+      label: O que é irreversível neste domínio
+      description: Qual ação, uma vez executada, não tem volta? É daí que sai a parte difícil do desafio.
+    validations:
+      required: true
+
+  - type: textarea
+    id: aprendizado
+    attributes:
+      label: O que quem construir isso vai aprender
+      description: Que competência de engenharia esse desafio força a desenvolver, e que os desafios anteriores não forçaram?
+    validations:
+      required: true

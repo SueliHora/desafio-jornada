@@ -1,0 +1,42 @@
+name: Dúvida na submissão
+description: Travou no fork, na branch, na pasta, no cartão ou no PR? É aqui.
+title: "[Submissão] "
+labels: ["submissão"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Antes de abrir, vale reler o `COMO-SUBMETER.md` na raiz do repositório — o passo a passo e o modelo do cartão estão lá.
+
+        Se o seu PR já está aberto e o problema é nele, comente no próprio PR em vez de abrir issue: fica tudo no mesmo lugar.
+
+  - type: dropdown
+    id: etapa
+    attributes:
+      label: Em que passo você travou
+      options:
+        - "1 — Fork do repositório"
+        - "2 — Criar a branch"
+        - "3 — Criar a pasta no mês certo"
+        - "4 — Preencher o cartão (README)"
+        - "5 — Adicionar a imagem"
+        - "6 — Commit"
+        - "7 — Abrir o pull request"
+        - "8/9 — Revisão e merge"
+        - "Outro / dúvida sobre as regras da galeria"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problema
+    attributes:
+      label: O que aconteceu
+      description: Descreva o que você tentou e o que apareceu na tela. Print ou mensagem de erro completa ajuda muito.
+    validations:
+      required: true
+
+  - type: input
+    id: link
+    attributes:
+      label: Link do seu fork, branch ou PR (opcional)
+      placeholder: "https://github.com/seu-usuario/desafio-jornada/tree/projeto/2026-08/seu-usuario"

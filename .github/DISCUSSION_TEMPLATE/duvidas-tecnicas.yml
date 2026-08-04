@@ -1,0 +1,75 @@
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Antes de abrir, confira se é o lugar certo:**
+
+        - Dúvida sobre **o que o cliente pediu** (escopo, garantias, prazos)? Isso é uma issue com o modelo "Pergunta ao cliente", no desafio do mês. A resposta vem na voz do cliente e vale para todos.
+        - Dúvida sobre **como construir** (arquitetura, stack, ferramenta, erro)? É aqui.
+
+        Quanto mais contexto você der, melhor a resposta. Pergunta vaga recebe resposta vaga.
+
+  - type: input
+    id: desafio
+    attributes:
+      label: Desafio
+      description: Em qual desafio você está trabalhando?
+      placeholder: "Agosto/2026 — Agente de Vendas de Ponta a Ponta"
+    validations:
+      required: true
+
+  - type: textarea
+    id: contexto
+    attributes:
+      label: O que você está tentando fazer
+      description: Descreva o objetivo, não só o sintoma. Qual o domínio que você escolheu e o que essa parte do sistema precisa entregar?
+    validations:
+      required: true
+
+  - type: textarea
+    id: tentativas
+    attributes:
+      label: O que você já tentou
+      description: Caminhos que testou e por que descartou. Se tem erro, cole a mensagem completa em bloco de código.
+      placeholder: |
+        Tentei X porque ...
+        Não funcionou porque ...
+
+        ```
+        cole aqui o erro, se houver
+        ```
+    validations:
+      required: true
+
+  - type: dropdown
+    id: garantia
+    attributes:
+      label: Qual garantia isso toca
+      description: Se a dúvida está ligada a uma das garantias do desafio, marque qual. Ajuda quem for responder.
+      multiple: true
+      options:
+        - "G1 — Nenhum fato inventado"
+        - "G2 — Preço nunca vem do modelo"
+        - "G3 — Nenhuma ação sem permissão"
+        - "G4 — Nada irreversível sem humano"
+        - "G5 — Dados pessoais protegidos"
+        - "G6 — Custo sob controle"
+        - "G7 — Tudo rastreável"
+        - "G8 — Qualidade que se prova"
+        - "G9 — Qualquer pessoa roda"
+        - "Nenhuma / não sei ainda"
+
+  - type: textarea
+    id: pergunta
+    attributes:
+      label: Sua pergunta
+      description: Em uma ou duas frases. Se for uma decisão de arquitetura, diga quais opções você está pesando.
+    validations:
+      required: true
+
+  - type: input
+    id: repositorio
+    attributes:
+      label: Link do seu repositório (opcional)
+      description: Se o código já está público, o link acelera muito a ajuda.
+      placeholder: "https://github.com/seu-usuario/seu-projeto"

@@ -1,0 +1,59 @@
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Projeto guardado na gaveta não muda carreira. Mostre o que você construiu, mesmo que ainda esteja pela metade.
+
+        Isto **não substitui** a submissão do cartão na galeria do mês — para isso, siga o `COMO-SUBMETER.md` na raiz do repositório. Aqui é para receber feedback dos colegas enquanto você constrói.
+
+  - type: input
+    id: repositorio
+    attributes:
+      label: Link do repositório
+      placeholder: "https://github.com/seu-usuario/seu-projeto"
+    validations:
+      required: true
+
+  - type: input
+    id: dominio
+    attributes:
+      label: Domínio que você escolheu
+      description: Lembrando a regra nº 1 do desafio de agosto — o seu projeto não pode ser a Vendinha.
+      placeholder: "Petshop, clínica, imobiliária, oficina, loja de instrumentos..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: estado
+    attributes:
+      label: O que já está funcionando
+      description: Seja concreto. O que uma pessoa consegue fazer hoje se rodar o seu projeto?
+    validations:
+      required: true
+
+  - type: textarea
+    id: decisao
+    attributes:
+      label: Uma decisão difícil que você tomou
+      description: A parte mais valiosa do post. Qual trade-off você enfrentou, quais eram as opções e por que escolheu essa? É isso que você vai defender em entrevista.
+    validations:
+      required: true
+
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Onde você quer feedback
+      description: Aponte o lugar exato. "Feedback geral" costuma não render nada.
+      placeholder: "Quero opinião sobre como isolei a camada de preço para garantir a G2."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: visibilidade
+    attributes:
+      label: A regra da visibilidade
+      description: Não é obrigatório para postar aqui, mas é o que faz o seu trabalho ser visto.
+      options:
+        - label: Meu repositório é público, com README próprio e histórico de commits visível
+        - label: Publiquei (ou vou publicar) no LinkedIn marcando a Jornada de Dados
+        - label: Compartilhei na plataforma da Jornada

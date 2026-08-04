@@ -1,0 +1,74 @@
+name: Pergunta ao cliente
+description: Dúvida sobre O QUE o desafio pede (escopo, garantias, prazos). A resposta vem na voz do cliente e vale para todos.
+title: "[Cliente] "
+labels: ["pergunta ao cliente"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Aqui você fala **com o cliente**, não com o suporte técnico.
+
+        O cliente é dono de um pequeno negócio. Ele entende do negócio dele, de resultado e de medo — não entende de framework, de banco de dados nem de arquitetura. Pergunta técnica ele não sabe responder.
+
+        | Pergunta que o cliente responde | Pergunta que ele NÃO responde |
+        |---|---|
+        | "Se o cliente pedir cancelamento, isso precisa de aprovação humana?" | "Devo usar LangGraph ou escrever o orquestrador na mão?" |
+        | "O documento emitido pode ser corrigido depois ou é definitivo?" | "Qual banco vetorial vocês recomendam?" |
+        | "Teto de custo por atendimento é por conversa ou por mês?" | "Como faço o teste automatizado da G8?" |
+
+        Dúvida técnica (o **como** construir) vai em Discussions, na categoria "Dúvidas técnicas".
+
+  - type: checkboxes
+    id: duplicada
+    attributes:
+      label: Antes de abrir
+      options:
+        - label: Procurei nas issues existentes (abertas e fechadas) e a minha pergunta ainda não foi respondida
+          required: true
+
+  - type: dropdown
+    id: desafio
+    attributes:
+      label: Desafio
+      description: A cada novo desafio do mês, adicione uma opção nesta lista.
+      options:
+        - "Agosto/2026 — Agente de Vendas de Ponta a Ponta"
+        - "Outro / vale para todos os desafios"
+    validations:
+      required: true
+
+  - type: textarea
+    id: pergunta
+    attributes:
+      label: Sua pergunta ao cliente
+      description: Escreva como se estivesse perguntando ao dono do negócio, na mesa dele. Uma pergunta por issue.
+      placeholder: "Quando o senhor diz que documento emitido não tem volta, isso vale também para orçamento, ou só para a nota?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: impacto
+    attributes:
+      label: Por que a resposta muda o seu projeto
+      description: Diga qual decisão está travada esperando essa resposta. Se a resposta não muda nada no que você vai construir, provavelmente é curiosidade — e aí o lugar é Discussions.
+      placeholder: "Se orçamento também for irreversível, preciso colocar aprovação humana antes de gerar orçamento, e não só antes da nota."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: garantia
+    attributes:
+      label: Garantia relacionada
+      description: Ajuda a agrupar as respostas por tema.
+      multiple: true
+      options:
+        - "G1 — Nenhum fato inventado"
+        - "G2 — Preço nunca vem do modelo"
+        - "G3 — Nenhuma ação sem permissão"
+        - "G4 — Nada irreversível sem humano"
+        - "G5 — Dados pessoais protegidos"
+        - "G6 — Custo sob controle"
+        - "G7 — Tudo rastreável"
+        - "G8 — Qualidade que se prova"
+        - "G9 — Qualquer pessoa roda"
+        - "Nenhuma / é sobre prazo ou processo"

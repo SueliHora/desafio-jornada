@@ -1,0 +1,19 @@
+# Configuração local do Claude Code (permissões da máquina, não do projeto)
+.claude/settings.local.json
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.swp
+
+# Python (para quem clonar e experimentar por aqui)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env

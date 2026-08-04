@@ -1,0 +1,17 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Dúvida técnica ou decisão de arquitetura
+    url: https://github.com/suajornadadedados/desafio-jornada/discussions/categories/duvidas-tecnicas
+    about: Como construir (stack, arquitetura, erro de execução) se resolve em Discussions, não em issue.
+
+  - name: Mostrar o seu projeto e pedir feedback
+    url: https://github.com/suajornadadedados/desafio-jornada/discussions/categories/mostre-seu-projeto
+    about: Ainda construindo e quer opinião dos colegas? Poste em Discussions. A submissão oficial é por pull request.
+
+  - name: Propor o desafio do próximo mês
+    url: https://github.com/suajornadadedados/desafio-jornada/discussions/categories/ideias-de-desafio
+    about: O tema de setembro entra em votação com a comunidade.
+
+  - name: Comunidade Jornada de Dados
+    url: https://suajornadadedados.com.br/
+    about: Plataforma, aulas e as lives exclusivas para alunos.
