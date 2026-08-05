@@ -2,10 +2,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        **Antes de abrir, confira se é o lugar certo:**
+        **Este é o lugar de toda dúvida do desafio:** o que o cliente pediu (escopo, garantias, prazos), como construir (arquitetura, stack, ferramenta, erro) ou como submeter o seu cartão.
 
-        - Dúvida sobre **o que o cliente pediu** (escopo, garantias, prazos)? Isso é uma issue com o modelo "Pergunta ao cliente", no desafio do mês. A resposta vem na voz do cliente e vale para todos.
-        - Dúvida sobre **como construir** (arquitetura, stack, ferramenta, erro)? É aqui.
+        Antes de abrir, dê uma busca por aqui: talvez alguém já tenha passado pela mesma dúvida.
 
         Quanto mais contexto você der, melhor a resposta. Pergunta vaga recebe resposta vaga.
 

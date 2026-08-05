@@ -74,18 +74,18 @@ Cada tipo de conversa tem um lugar. Achar o lugar certo faz a sua resposta chega
 
 | O que você quer | Onde ir |
 |---|---|
-| Entender **o que o cliente quis dizer** (escopo, garantias, prazos) | Issue → [**Pergunta ao cliente**](https://github.com/suajornadadedados/desafio-jornada/issues/new?template=pergunta-ao-cliente.yml) |
+| Entender **o que o cliente quis dizer** (escopo, garantias, prazos) | Discussion → [**Como construir**](https://github.com/suajornadadedados/desafio-jornada/discussions/new?category=como-construir) |
 | Saber **como construir** (arquitetura, stack, um erro que não passa) | Discussion → [**Como construir**](https://github.com/suajornadadedados/desafio-jornada/discussions/new?category=como-construir) |
+| **Travou na submissão** (fork, branch, pasta, cartão, PR) | Discussion → [**Como construir**](https://github.com/suajornadadedados/desafio-jornada/discussions/new?category=como-construir) |
 | **Mostrar o que já construiu** e pedir feedback dos colegas | Discussion → [**Mostre seu projeto**](https://github.com/suajornadadedados/desafio-jornada/discussions/new?category=mostre-seu-projeto) |
-| **Submeter oficialmente** o seu cartão para a galeria | [Pull request](COMO-SUBMETER.md) |
-| **Travou na submissão** (fork, branch, pasta, cartão, PR) | Issue → [**Dúvida na submissão**](https://github.com/suajornadadedados/desafio-jornada/issues/new?template=duvida-na-submissao.yml) |
 | **Propor o desafio** de um próximo mês | Discussion → [**Ideias**](https://github.com/suajornadadedados/desafio-jornada/discussions/new?category=ideias) |
-| Avisar sobre **erro no material** (link quebrado, texto confuso) | Issue → [**Erro no material**](https://github.com/suajornadadedados/desafio-jornada/issues/new?template=erro-no-material.yml) ou um pull request de correção |
-| **Elogiar ou comentar** o projeto de um colega | Issue no repositório dele. Feedback é presente |
+| **Submeter oficialmente** o seu cartão para a galeria | [Pull request](COMO-SUBMETER.md) |
+| Avisar sobre um **problema neste repositório** (link quebrado, arquivo errado, texto confuso) | [Abra uma issue](https://github.com/suajornadadedados/desafio-jornada/issues/new) ou mande um pull request de correção |
+| **Elogiar ou comentar** o projeto de um colega | No repositório dele, ou na discussion em que ele apresentou o projeto. Feedback é presente |
 
-Duas diferenças que vale entender, porque são a fonte da maior parte da confusão:
+Duas coisas que vale entender, porque são a fonte da maior parte da confusão:
 
-- **Issue é para pergunta com resposta oficial. Discussion é para conversa.** Se a sua dúvida é sobre *o que* o desafio pede, a resposta vem na voz do cliente e vale para todo mundo, então é issue. Se é sobre *como* você vai construir, é conversa entre colegas, então é discussion
+- **Dúvida é discussion; problema no repositório é issue.** Toda pergunta, seja sobre *o que* o desafio pede ou sobre *como* você vai construir, vive nas Discussions: é lá que a comunidade se ajuda e a resposta fica registrada para quem vier depois de você. As issues aqui ficam reservadas para apontar algo quebrado ou errado neste repositório, para a gente consertar
 - **Discussion não substitui a submissão.** Postar o projeto em "Mostre seu projeto" serve para receber feedback enquanto você constrói. Para entrar na galeria oficial, é pull request
 
 Na categoria **Como construir** as respostas podem ser marcadas como solução. Antes de perguntar, dê uma busca: talvez a sua dúvida já esteja resolvida por alguém que passou por ela no mês passado.

@@ -122,7 +122,7 @@ Cada uma dessas decisões merece registro no seu repositório, com as alternativ
 3. **Crie o seu repositório público.** Este repositório aqui é o enunciado; o trabalho acontece no seu
 4. **Registre o seu projeto no mural** deste repositório, abrindo um pull request que adiciona uma linha à tabela do mural com seu nome, o domínio escolhido e o link do seu projeto (esse PR já é sua primeira prática do fluxo)
 5. **Faça o discovery, documente, construa.** Nessa ordem
-6. **Dúvidas sobre o pedido?** Abra uma issue com o modelo "Pergunta ao cliente". Eu respondo como o cliente responderia: sobre o negócio, as prioridades e os medos, nunca sobre qual tecnologia usar, porque o cliente não sabe o que é um banco de dados. Extrair requisitos de um cliente leigo é parte do desafio.
+6. **Dúvidas sobre o pedido?** Pergunte na categoria [**Como construir**](https://github.com/suajornadadedados/desafio-jornada/discussions/new?category=como-construir) das Discussions. Eu respondo como o cliente responderia: sobre o negócio, as prioridades e os medos, nunca sobre qual tecnologia usar, porque o cliente não sabe o que é um banco de dados. Extrair requisitos de um cliente leigo é parte do desafio.
 
 ## Datas e o que acontece com os projetos
 
