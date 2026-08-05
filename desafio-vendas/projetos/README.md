@@ -10,4 +10,6 @@ A galeria abre em **11/08/2026**.
 |---|---|---|---|
 | _seja o primeiro_ | | | |
 
-> Viu um projeto interessante aqui? Abra uma issue no repositório do colega com um elogio, uma pergunta ou uma sugestão. Feedback é presente.
+A tabela acima é preenchida pela equipe da Jornada quando o seu pull request entra. Você não precisa editá-la: o seu PR traz só a sua pasta com o cartão e as imagens, e nada mais.
+
+> Viu um projeto interessante aqui? Deixe um elogio, uma pergunta ou uma sugestão no repositório do colega, ou na discussion em que ele apresentou o projeto. Feedback é presente.

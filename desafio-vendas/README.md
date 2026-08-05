@@ -120,7 +120,7 @@ Cada uma dessas decisões merece registro no seu repositório, com as alternativ
 1. **Assista ao workshop completo da Vendinha** para ver o método aplicado de ponta a ponta
 2. **Escolha o seu domínio** (diferente da Vendinha)
 3. **Crie o seu repositório público.** Este repositório aqui é o enunciado; o trabalho acontece no seu
-4. **Registre o seu projeto no mural** deste repositório, abrindo um pull request que adiciona uma linha à tabela do mural com seu nome, o domínio escolhido e o link do seu projeto (esse PR já é sua primeira prática do fluxo)
+4. **Submeta o cartão do seu projeto à galeria** deste repositório, abrindo um pull request que adiciona a sua pasta com o cartão, seguindo o passo a passo do [COMO-SUBMETER.md](../COMO-SUBMETER.md) (esse PR já é a sua primeira prática do fluxo)
 5. **Faça o discovery, documente, construa.** Nessa ordem
 6. **Dúvidas sobre o pedido?** Pergunte na categoria [**Como construir**](https://github.com/suajornadadedados/desafio-jornada/discussions/new?category=como-construir) das Discussions. Eu respondo como o cliente responderia: sobre o negócio, as prioridades e os medos, nunca sobre qual tecnologia usar, porque o cliente não sabe o que é um banco de dados. Extrair requisitos de um cliente leigo é parte do desafio.
 
@@ -129,10 +129,10 @@ Cada uma dessas decisões merece registro no seu repositório, com as alternativ
 | Data | O que acontece |
 |---|---|
 | 11/08/2026 | Desafio aberto, junto com o lançamento do workshop |
-| Ao longo do mês | Perguntas ao cliente respondidas; projetos registrados no mural podem ser comentados na live exclusiva para alunos |
-| **28/08/2026** | Data de referência do desafio: registre seu projeto no mural e avance o quanto conseguir |
+| Ao longo do mês | Perguntas respondidas nas Discussions; projetos na galeria podem ser comentados na live exclusiva para alunos |
+| **28/08/2026** | Data de referência do desafio: submeta o seu cartão à galeria e avance o quanto conseguir |
 | Semana final de agosto | Projetos que mais se destacarem aparecem no vídeo de encerramento no canal e nas redes da Jornada, com os devidos créditos |
-| Depois de 28/08 | O desafio continua aberto: mural recebendo projetos e perguntas sendo respondidas. A data existe para dar ritmo; o método fica |
+| Depois de 28/08 | O desafio continua aberto: galeria recebendo cartões e perguntas sendo respondidas nas Discussions. A data existe para dar ritmo; o método fica |
 
 Projetos em diferentes estágios são bem-vindos. Um discovery bem feito com uma especificação sólida já é uma entrega valiosa, mesmo que a implementação esteja no começo. E lembre: o seu repositório fica público no seu perfil. Um projeto completo, documentado e com processo visível vale mais em um portfólio do que dez tutoriais seguidos.
 

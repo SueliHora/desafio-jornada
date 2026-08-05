@@ -35,7 +35,7 @@ Siga na ordem. O processo inteiro leva uns 20 minutos e é, ele mesmo, uma prát
 
 8. **Aguarde a revisão.** Vamos conferir se o cartão segue o modelo e se os links funcionam. Se algo precisar de ajuste, comentamos no próprio PR, como em qualquer revisão de código do mundo real
 
-9. **Merge feito, você está na galeria.** Seu nome entra na lista de contribuidores do repositório da Jornada de Dados e seu projeto fica visível para toda a comunidade
+9. **Merge feito, você está na galeria.** A gente adiciona a sua linha na tabela da galeria do mês, seu nome entra na lista de contribuidores do repositório da Jornada de Dados e seu projeto fica visível para toda a comunidade
 
 ## Checklist antes de abrir o PR
 
