@@ -6,7 +6,9 @@ Você construiu (ou está construindo) o seu projeto do desafio? Então esta pá
 
 O seu projeto completo vive no **seu** repositório, no seu perfil do GitHub. É lá que está o código, a documentação e todo o histórico do seu trabalho. Isso é proposital: o portfólio é seu e fica com você.
 
-O que você submete aqui é o **cartão do seu projeto**: uma pasta com o seu nome de usuário contendo um README de apresentação, seguindo o modelo abaixo. Esse cartão entra na galeria do mês e aponta para o seu repositório completo.
+O que você submete aqui é o **cartão do seu projeto**: uma pasta com o seu nome de usuário contendo um README de apresentação e as imagens que quiser. Esse cartão entra na galeria do mês e aponta para o seu repositório completo.
+
+**O texto do cartão é livre.** Escreva do seu jeito, com as seções que fizerem sentido para o seu projeto, com quantas imagens quiser. A única parte obrigatória é o bloco de metadados no topo do arquivo: é dele que sai o [mural de projetos](PROJETOS.md), que se atualiza sozinho a cada submissão.
 
 | O que fica no SEU repositório | O que entra AQUI (galeria) |
 |---|---|
@@ -25,75 +27,76 @@ Siga na ordem. O processo inteiro leva uns 20 minutos e é, ele mesmo, uma prát
 
 3. **Crie a sua pasta** dentro da pasta de projetos do mês correspondente. Exemplo: dentro de `desafio-vendas/projetos/`, crie a pasta `caiomachado`
 
-4. **Crie o README do seu cartão** dentro da sua pasta, copiando o modelo da seção abaixo e preenchendo com as informações do seu projeto
+4. **Publique o seu projeto** no LinkedIn e na comunidade da plataforma, e guarde os dois links: eles são obrigatórios no cartão. É a regra da visibilidade do desafio, e ela vem antes da submissão justamente para não ficar para depois
 
-5. **Adicione uma imagem** na sua pasta, se quiser: um diagrama da arquitetura ou um print do produto funcionando deixa o seu cartão muito mais atraente na galeria
+5. **Crie o README do seu cartão** dentro da sua pasta, começando pelo bloco de metadados do modelo abaixo. Do bloco para baixo, escreva como quiser — inclusive com as imagens que colocar na sua pasta, como um diagrama da arquitetura ou um print do produto funcionando
 
 6. **Faça o commit** seguindo um padrão consistente. Exemplo: `docs: adiciona projeto de caiomachado ao desafio 2026-08`
 
 7. **Abra o pull request** do seu fork para este repositório, com um título claro e uma breve descrição do seu projeto no corpo
 
-8. **Aguarde a revisão.** Vamos conferir se o cartão segue o modelo e se os links funcionam. Se algo precisar de ajuste, comentamos no próprio PR, como em qualquer revisão de código do mundo real
+8. **Aguarde a revisão.** Assim que o PR abre, uma validação automática confere o bloco de metadados e avisa no próprio PR se faltou alguma coisa. Passando nela, a revisão humana olha o conteúdo do projeto. Se algo precisar de ajuste, comentamos no PR, como em qualquer revisão de código do mundo real
 
-9. **Merge feito, você está na galeria.** A gente adiciona a sua linha na tabela da galeria do mês, seu nome entra na lista de contribuidores do repositório da Jornada de Dados e seu projeto fica visível para toda a comunidade
+9. **Merge feito, você está na galeria.** O [mural de projetos](PROJETOS.md) se atualiza sozinho em seguida, com a sua linha montada a partir dos metadados do cartão. Seu nome entra na lista de contribuidores do repositório da Jornada de Dados e seu projeto fica visível para toda a comunidade
 
 ## Checklist antes de abrir o PR
 
 - [ ] Meu repositório de projeto é público e o link está correto no cartão
 - [ ] Meu repositório tem README próprio com instruções de como rodar o projeto
-- [ ] O cartão segue o modelo abaixo, com todas as seções preenchidas
-- [ ] A pasta tem o meu nome de usuário do GitHub, em letras minúsculas
+- [ ] O bloco de metadados está no topo do cartão, com todos os campos obrigatórios preenchidos
+- [ ] Os links do LinkedIn e da plataforma são dos **posts**, não do meu perfil, e estão sem o `?utm_source=...` no fim
+- [ ] A pasta tem o meu nome de usuário do GitHub, em letras minúsculas, igual ao campo `usuario`
 - [ ] A pasta está dentro do mês correto
-- [ ] Não incluí código do projeto aqui, apenas o cartão e a imagem
+- [ ] Não incluí código do projeto aqui, apenas o cartão e as imagens
 - [ ] Não incluí nenhum dado real ou informação sensível
 
-## Modelo do cartão
+## O bloco de metadados
 
-Copie o conteúdo abaixo para o README da sua pasta e preencha cada seção.
+Esta é a **única parte obrigatória** do cartão. Ela vai no topo do arquivo, entre duas linhas de `---`, sem nada antes. É daqui que sai a sua linha no [mural de projetos](PROJETOS.md).
 
 ```markdown
-# Nome do Projeto
-
-**Autor:** seu nome (@seu-usuario)
-**Domínio:** o negócio que você escolheu
-**Repositório completo:** link para o seu repositório
-**Status:** Discovery / Em construção / Funcionando / Em produção
-
-## O projeto em três linhas
-
-Descreva o que o seu agente faz, para quem, e qual problema resolve.
-
-## Arquitetura
-
-Uma imagem ou diagrama, e um parágrafo explicando como o sistema funciona:
-quantos agentes, o que cada um pode fazer, onde o humano entra.
-
-## Stack escolhida
-
-Liste as principais tecnologias e uma frase sobre o porquê de cada escolha.
-
-## As três decisões mais difíceis
-
-Conte as três decisões de engenharia mais difíceis que você tomou,
-o que considerou como alternativa e por que decidiu assim.
-
-## Como atendi às garantias
-
-| Garantia | Como resolvi |
-|---|---|
-| G1 Nenhum fato inventado | |
-| G3 Nenhuma ação sem permissão | |
-| G4 Nada irreversível sem humano | |
-| G7 Tudo rastreável | |
-| G8 Qualidade que se prova | |
-
-Preencha as garantias que já atendeu; as demais podem entrar conforme o projeto evolui.
-
-## O que eu aprendi
-
-Um parágrafo honesto: o que foi mais difícil, o que faria diferente,
-o que este projeto mudou na sua forma de trabalhar.
+---
+projeto: Agente de Atendimento do Petshop
+autor: Caio Machado
+usuario: caiomachado
+dominio: Petshop
+repositorio: https://github.com/caiomachado/agente-petshop
+status: Em construção
+linkedin: https://www.linkedin.com/posts/caiomachado_meu-projeto-do-desafio-share-7490415422425698304-LuUl
+plataforma: https://suajornadadedados.curseduca.pro/m/community/posts/a773a771-9319-4f51-8340-2358d8d9832d
+video: https://youtu.be/abcdefghijk
+---
 ```
+
+| Campo | Obrigatório | O que é |
+|---|---|---|
+| `projeto` | sim | O nome do seu projeto, como aparece no mural |
+| `autor` | sim | Seu nome, como você quer ser creditado |
+| `usuario` | sim | Seu usuário do GitHub, em minúsculas. Precisa ser igual ao nome da pasta |
+| `dominio` | sim | O negócio que você escolheu: petshop, clínica, imobiliária... |
+| `repositorio` | sim | Link do seu repositório público no GitHub |
+| `status` | sim | Um destes, exatamente: `Discovery`, `Em construção`, `Funcionando`, `Em produção` |
+| `linkedin` | sim | Link do **post** sobre o projeto, não do seu perfil |
+| `plataforma` | sim | Link do seu post na comunidade da plataforma da Jornada |
+| `video` | não | Uma demo no YouTube ou Loom, se você gravou |
+
+Dois detalhes que reprovam o PR e são fáceis de evitar:
+
+- **Tire o rabo do link.** O botão de compartilhar do LinkedIn cola um `?utm_source=share&utm_medium=member_desktop&rcm=...` no fim da URL. Esse `rcm` identifica a conta que copiou o link, e ele ficaria público e permanente aqui. Cole só o que vem antes do `?`
+- **Se o valor tiver dois-pontos, use aspas.** `projeto: "Clínica: agenda e triagem"`, senão o bloco não é lido corretamente
+
+## Do bloco para baixo, é seu
+
+Não existe modelo obrigatório para o corpo do cartão: escreva como quiser. Se você quer uma sugestão de por onde começar, estes são os assuntos que a comunidade mais procura ler em um cartão:
+
+- O projeto em três linhas: o que o seu agente faz, para quem, que problema resolve
+- A arquitetura, de preferência com um diagrama: quantos agentes, o que cada um pode fazer, onde o humano entra
+- A stack escolhida, com uma frase sobre o porquê de cada escolha
+- As três decisões de engenharia mais difíceis, com as alternativas que você descartou
+- Como você atendeu às garantias do desafio (G1 a G9)
+- O que você aprendeu: o que foi mais difícil, o que faria diferente
+
+Seja generoso na última. É a parte que a comunidade mais lê.
 
 ## Regras da galeria
 

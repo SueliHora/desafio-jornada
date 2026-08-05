@@ -1,7 +1,7 @@
 <div align="center">
   <img src="./assets/banner.svg" alt="Jornada de Dados — Projetos reais de IA e Dados" width="100%"/>
 
-  [**Desafio do mês**](desafio-vendas/README.md) • [**Como submeter**](COMO-SUBMETER.md) • [**Tirar uma dúvida**](https://github.com/suajornadadedados/desafio-jornada/discussions) • [**Comunidade**](https://suajornadadedados.com.br/)
+  [**Desafio do mês**](desafio-vendas/README.md) • [**Projetos da comunidade**](PROJETOS.md) • [**Como submeter**](COMO-SUBMETER.md) • [**Tirar uma dúvida**](https://github.com/suajornadadedados/desafio-jornada/discussions) • [**Comunidade**](https://suajornadadedados.com.br/)
 </div>
 
 # Desafios Jornada de Dados: Projetos Reais de IA e Dados
@@ -26,8 +26,8 @@ Travou em algo? A seção [Onde falar com a comunidade](#onde-falar-com-a-comuni
 |---|---|
 | 1. Lançamento do mês | Todo mês publicamos um novo desafio nesta página, junto com um workshop completo no canal da Jornada de Dados mostrando o método aplicado em um projeto de exemplo |
 | 2. Você constrói | Você escolhe o seu domínio, faz o discovery, documenta, decide e constrói no **seu** repositório, no seu perfil do GitHub |
-| 3. Você submete | Você adiciona o cartão do seu projeto à galeria do mês, seguindo o passo a passo do arquivo [COMO-SUBMETER.md](COMO-SUBMETER.md) |
-| 4. Você publica | Você compartilha o projeto e a experiência no LinkedIn e na plataforma da Jornada (veja a regra da visibilidade abaixo) |
+| 3. Você publica | Você compartilha o projeto e a experiência no LinkedIn e na plataforma da Jornada (veja a regra da visibilidade abaixo) |
+| 4. Você submete | Você adiciona o cartão do seu projeto à galeria do mês, com os links das publicações, seguindo o passo a passo do arquivo [COMO-SUBMETER.md](COMO-SUBMETER.md) |
 | 5. A comunidade reconhece | Projetos da galeria podem ser comentados nas lives exclusivas para alunos, e os destaques aparecem no vídeo de encerramento do mês e nas redes da Jornada |
 
 ## Calendário de projetos
@@ -48,7 +48,9 @@ O seu projeto completo vive no **seu** repositório. O que entra aqui é só o *
 
 | Fica no SEU repositório | Entra AQUI, na galeria |
 |---|---|
-| Código, documentação, histórico de commits, CI | Uma pasta com o seu usuário, um README de apresentação e uma imagem opcional |
+| Código, documentação, histórico de commits, CI | Uma pasta com o seu usuário, um README de apresentação e as imagens que quiser |
+
+O texto do cartão é livre: escreva do seu jeito. A única parte obrigatória é o bloco de metadados no topo, e é dele que sai automaticamente a sua linha no mural de **[PROJETOS.md](PROJETOS.md)**.
 
 O caminho é o mesmo de qualquer contribuição de código no mundo real:
 
@@ -63,8 +65,10 @@ O passo a passo completo, o modelo do cartão e as regras da galeria estão em *
 Projeto guardado na gaveta não muda carreira. Por isso, participar do desafio inclui três compromissos de publicação. Eles existem por um único motivo: **trazer visibilidade para você.**
 
 - [ ] **Publique no GitHub.** Seu projeto deve estar em um repositório público no seu perfil, com README próprio, documentação e histórico de commits visível. É o seu portfólio técnico: é para lá que recrutadores e colegas vão olhar
-- [ ] **Publique no LinkedIn.** Ao submeter seu cartão na galeria, publique também um post contando o projeto ou a experiência: o que construiu, uma decisão difícil que tomou, um aprendizado honesto. Marque a [Jornada de Dados](https://www.linkedin.com/company/jornadadedados/posts/?feedView=all), porque a gente adora repostar projeto de aluno, e cada repost amplia o seu alcance
+- [ ] **Publique no LinkedIn.** Publique um post contando o projeto ou a experiência: o que construiu, uma decisão difícil que tomou, um aprendizado honesto. Marque a [Jornada de Dados](https://www.linkedin.com/company/jornadadedados/posts/?feedView=all), porque a gente adora repostar projeto de aluno, e cada repost amplia o seu alcance
 - [ ] **Publique na plataforma da Jornada.** Compartilhe seu projeto na [comunidade da plataforma](https://suajornadadedados.com.br/) para receber feedback dos colegas e dos instrutores, e para inspirar quem está começando o desafio depois de você
+
+Os dois links de publicação são **campos obrigatórios do cartão**, então publique antes de submeter. Não é burocracia: é o que impede o passo mais importante para a sua carreira de ficar para depois e nunca acontecer.
 
 Quem cumpre os três não está fazendo favor para a Jornada. Está construindo presença pública como engenheiro, com prova de trabalho real. A diferença entre quem é visto no mercado e quem não é raramente está na competência: está na visibilidade da competência.
 

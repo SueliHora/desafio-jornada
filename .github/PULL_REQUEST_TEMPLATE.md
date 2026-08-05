@@ -33,10 +33,12 @@ Confira antes de marcar como pronto para revisão. É o mesmo checklist do `COMO
 
 - [ ] Meu repositório de projeto é público e o link no cartão abre corretamente
 - [ ] Meu repositório tem README próprio com instruções de como rodar o projeto
-- [ ] O cartão segue o modelo, com todas as seções preenchidas
-- [ ] A pasta tem o meu nome de usuário do GitHub, em letras minúsculas
+- [ ] O bloco de metadados está no topo do cartão, com todos os campos obrigatórios preenchidos
+- [ ] Os links do LinkedIn e da plataforma são dos **posts**, não do meu perfil, e estão sem o `?utm_source=...` no fim
+- [ ] A pasta tem o meu nome de usuário do GitHub, em letras minúsculas, igual ao campo `usuario`
 - [ ] A pasta está dentro do mês correto
-- [ ] Não incluí código do projeto aqui, apenas o cartão e a imagem
+- [ ] Não incluí código do projeto aqui, apenas o cartão e as imagens
+- [ ] Não editei o `PROJETOS.md` (ele é gerado automaticamente depois do merge)
 - [ ] Não incluí nenhum dado real ou informação sensível
 - [ ] O meu projeto não é o exemplo trabalhado no workshop do mês
 

@@ -6,10 +6,6 @@ Cada pasta aqui é o cartão de um participante: um README de apresentação apo
 
 A galeria abre em **11/08/2026**.
 
-| Participante | Projeto | Domínio | Status |
-|---|---|---|---|
-| _seja o primeiro_ | | | |
-
-A tabela acima é preenchida pela equipe da Jornada quando o seu pull request entra. Você não precisa editá-la: o seu PR traz só a sua pasta com o cartão e as imagens, e nada mais.
+**A lista de projetos fica no [PROJETOS.md](../../PROJETOS.md)**, na raiz do repositório. Ele reúne todos os meses e é gerado automaticamente a partir dos cartões, então nunca fica desatualizado e ninguém precisa editá-lo à mão.
 
 > Viu um projeto interessante aqui? Deixe um elogio, uma pergunta ou uma sugestão no repositório do colega, ou na discussion em que ele apresentou o projeto. Feedback é presente.
