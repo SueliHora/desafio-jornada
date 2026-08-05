@@ -15,7 +15,6 @@ import os
 import re
 import sys
 import unicodedata
-from urllib.parse import urlsplit
 
 OBRIGATORIOS = [
     "projeto",
@@ -32,14 +31,27 @@ CONHECIDOS = OBRIGATORIOS + OPCIONAIS
 
 STATUS = ["Discovery", "Em construção", "Funcionando", "Em produção"]
 
-HOSTS_GITHUB = {"github.com", "www.github.com"}
-HOSTS_LINKEDIN = {"linkedin.com", "www.linkedin.com"}
-# O "copy link" do LinkedIn gera /posts/ para post normal e /feed/update/ para
-# alguns tipos de publicação. Os dois são válidos; o slug depois disso varia
-# demais (aparece tanto -activity- quanto -share-) para valer a pena validar.
-PREFIXOS_LINKEDIN = ("/posts/", "/feed/update/")
-HOST_PLATAFORMA = "suajornadadedados.curseduca.pro"
-PREFIXO_PLATAFORMA = "/m/community/posts/"
+# Cada campo de link só precisa começar com o endereço certo e ter alguma coisa
+# depois dele. Não conferimos se o link abre, nem o formato do identificador: o
+# que interessa é que o aluno colou um post, e não o perfil ou a home.
+LINKS = {
+    "repositorio": (
+        "https://github.com/",
+        "o seu repositório público no GitHub",
+    ),
+    "linkedin": (
+        "https://www.linkedin.com/posts/",
+        "o link do post sobre o projeto, não o do seu perfil",
+    ),
+    "plataforma": (
+        "https://suajornadadedados.curseduca.pro/m/community/posts/",
+        "o link do seu post na comunidade da plataforma",
+    ),
+    "video": (
+        "https://",
+        "o link da sua demo em vídeo",
+    ),
+}
 
 USUARIO_RE = re.compile(r"^[a-z0-9](?:[a-z0-9]|-(?=[a-z0-9])){0,38}$")
 
@@ -130,41 +142,23 @@ def le_metadados(caminho):
     return dados, erros
 
 
-def _valida_link(campo, valor, hosts, prefixos=None, exemplo=""):
-    """Confere um link: https, host esperado, caminho esperado, sem rastreio."""
-    erros = []
-    partes = urlsplit(valor)
+def _valida_link(campo, valor):
+    """Confere só que o link existe e começa com o endereço esperado."""
+    prefixo, oque = LINKS[campo]
 
-    if partes.scheme != "https":
-        erros.append(f"O link do campo `{campo}` precisa começar com `https://`.")
-        return erros
+    if not valor.startswith(prefixo):
+        return [
+            f"O campo `{campo}` precisa ser {oque}, começando com `{prefixo}`.\n"
+            f"     Você colocou: `{valor}`"
+        ]
 
-    if partes.netloc.lower() not in hosts:
-        erros.append(
-            f"O campo `{campo}` aponta para `{partes.netloc or 'lugar nenhum'}`, e "
-            f"deveria apontar para {' ou '.join(sorted(hosts))}." + exemplo
-        )
-        return erros
+    if len(valor.rstrip("/")) <= len(prefixo.rstrip("/")):
+        return [
+            f"O campo `{campo}` tem só o começo do endereço (`{prefixo}`), "
+            "sem o link do post em si."
+        ]
 
-    if prefixos and not partes.path.startswith(tuple(prefixos)):
-        erros.append(
-            f"O campo `{campo}` não parece o link de uma publicação: o caminho "
-            f"`{partes.path or '/'}` deveria começar com "
-            f"{' ou '.join(f'`{p}`' for p in prefixos)}." + exemplo
-        )
-        return erros
-
-    # O botão de compartilhar cola parâmetros de rastreamento que identificam
-    # quem copiou o link. Isso não entra num repositório público e permanente.
-    if partes.query or partes.fragment:
-        limpo = f"{partes.scheme}://{partes.netloc}{partes.path.rstrip('/')}"
-        erros.append(
-            f"O link do campo `{campo}` veio com parâmetros de rastreamento no "
-            f"fim (`?{partes.query}`). Eles identificam quem copiou o link e não "
-            f"entram no repositório. Use assim:\n     `{limpo}`"
-        )
-
-    return erros
+    return []
 
 
 def valida_metadados(dados, usuario_da_pasta=None):
@@ -204,43 +198,9 @@ def valida_metadados(dados, usuario_da_pasta=None):
             f"Use um destes: {', '.join(STATUS)}."
         )
 
-    if dados.get("repositorio"):
-        erros += _valida_link(
-            "repositorio",
-            dados["repositorio"],
-            HOSTS_GITHUB,
-            exemplo="\n     Exemplo: `https://github.com/seu-usuario/seu-projeto`",
-        )
-
-    if dados.get("linkedin"):
-        erros += _valida_link(
-            "linkedin",
-            dados["linkedin"],
-            HOSTS_LINKEDIN,
-            PREFIXOS_LINKEDIN,
-            exemplo=(
-                "\n     Precisa ser o link do post, não o do seu perfil."
-                "\n     Exemplo: `https://www.linkedin.com/posts/seu-usuario_meu-projeto-...`"
-            ),
-        )
-
-    if dados.get("plataforma"):
-        erros += _valida_link(
-            "plataforma",
-            dados["plataforma"],
-            {HOST_PLATAFORMA},
-            [PREFIXO_PLATAFORMA],
-            exemplo=(
-                "\n     É o link do seu post na comunidade da plataforma."
-                f"\n     Exemplo: `https://{HOST_PLATAFORMA}{PREFIXO_PLATAFORMA}<id-do-post>`"
-            ),
-        )
-
-    if dados.get("video"):
-        erros += _valida_link("video", dados["video"], {
-            "youtube.com", "www.youtube.com", "youtu.be",
-            "loom.com", "www.loom.com",
-        }, exemplo="\n     Aceita YouTube ou Loom.")
+    for campo in LINKS:
+        if dados.get(campo):
+            erros += _valida_link(campo, dados[campo])
 
     return erros
 

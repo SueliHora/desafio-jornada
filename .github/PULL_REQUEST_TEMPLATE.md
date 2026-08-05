@@ -34,7 +34,7 @@ Confira antes de marcar como pronto para revisão. É o mesmo checklist do `COMO
 - [ ] Meu repositório de projeto é público e o link no cartão abre corretamente
 - [ ] Meu repositório tem README próprio com instruções de como rodar o projeto
 - [ ] O bloco de metadados está no topo do cartão, com todos os campos obrigatórios preenchidos
-- [ ] Os links do LinkedIn e da plataforma são dos **posts**, não do meu perfil, e estão sem o `?utm_source=...` no fim
+- [ ] Os links do LinkedIn e da plataforma são dos **posts**, não do meu perfil
 - [ ] A pasta tem o meu nome de usuário do GitHub, em letras minúsculas, igual ao campo `usuario`
 - [ ] A pasta está dentro do mês correto
 - [ ] Não incluí código do projeto aqui, apenas o cartão e as imagens

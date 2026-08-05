@@ -44,7 +44,7 @@ Siga na ordem. O processo inteiro leva uns 20 minutos e é, ele mesmo, uma prát
 - [ ] Meu repositório de projeto é público e o link está correto no cartão
 - [ ] Meu repositório tem README próprio com instruções de como rodar o projeto
 - [ ] O bloco de metadados está no topo do cartão, com todos os campos obrigatórios preenchidos
-- [ ] Os links do LinkedIn e da plataforma são dos **posts**, não do meu perfil, e estão sem o `?utm_source=...` no fim
+- [ ] Os links do LinkedIn e da plataforma são dos **posts**, não do meu perfil
 - [ ] A pasta tem o meu nome de usuário do GitHub, em letras minúsculas, igual ao campo `usuario`
 - [ ] A pasta está dentro do mês correto
 - [ ] Não incluí código do projeto aqui, apenas o cartão e as imagens
@@ -76,14 +76,15 @@ video: https://youtu.be/abcdefghijk
 | `dominio` | sim | O negócio que você escolheu: petshop, clínica, imobiliária... |
 | `repositorio` | sim | Link do seu repositório público no GitHub |
 | `status` | sim | Um destes, exatamente: `Discovery`, `Em construção`, `Funcionando`, `Em produção` |
-| `linkedin` | sim | Link do **post** sobre o projeto, não do seu perfil |
-| `plataforma` | sim | Link do seu post na comunidade da plataforma da Jornada |
-| `video` | não | Uma demo no YouTube ou Loom, se você gravou |
+| `linkedin` | sim | Link do **post** sobre o projeto, começando com `https://www.linkedin.com/posts/` |
+| `plataforma` | sim | Link do seu post na comunidade, começando com `https://suajornadadedados.curseduca.pro/m/community/posts/` |
+| `video` | não | Uma demo em vídeo, se você gravou |
 
-Dois detalhes que reprovam o PR e são fáceis de evitar:
+Sobre os links, a validação confere só isso: que existem e que começam com o endereço certo. Ela não abre o link nem confere o que tem dentro. O que ela pega é o erro comum de colar o **perfil** no lugar do **post** — o link do post você consegue no botão de compartilhar da própria publicação.
 
-- **Tire o rabo do link.** O botão de compartilhar do LinkedIn cola um `?utm_source=share&utm_medium=member_desktop&rcm=...` no fim da URL. Esse `rcm` identifica a conta que copiou o link, e ele ficaria público e permanente aqui. Cole só o que vem antes do `?`
-- **Se o valor tiver dois-pontos, use aspas.** `projeto: "Clínica: agenda e triagem"`, senão o bloco não é lido corretamente
+Um detalhe que reprova o PR e é fácil de evitar: **se o valor tiver dois-pontos, use aspas.** `projeto: "Clínica: agenda e triagem"`, senão o bloco não é lido corretamente.
+
+Opcional, mas recomendado: o botão de compartilhar do LinkedIn cola um `?utm_source=share&...&rcm=...` no fim da URL, e esse `rcm` identifica a conta que copiou o link. Não reprova nada, mas cortar tudo a partir do `?` deixa o seu cartão mais limpo.
 
 ## Do bloco para baixo, é seu
 
