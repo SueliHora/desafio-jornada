@@ -5,14 +5,15 @@ Gera o `PROJETOS.md`: o mural de todos os projetos da comunidade.
 O mural é uma função das pastas de cartão que existem no repositório. Ele é
 reescrito inteiro a cada execução, nunca acrescentado — assim rodar duas vezes
 dá o mesmo resultado, ninguém precisa resolver conflito e um cartão atualizado
-(um vídeo de demo que entrou depois, por exemplo) aparece no mural sozinho,
-sem ninguém editar tabela na mão.
+(um vídeo de demo que entrou depois, por exemplo) entra no mural sem ninguém
+editar tabela na mão.
 
-Uso:
+Quem roda é a manutenção do repositório, depois que um cartão entra na main:
+
     python gera_projetos.py [--conferir]
 
 Sem argumento, escreve o arquivo. Com `--conferir`, só avisa se o arquivo no
-disco está desatualizado, sem escrever (útil para rodar em PR).
+disco está desatualizado, sem escrever.
 """
 
 import os
@@ -36,9 +37,9 @@ DESAFIOS = {
     "desafio-vendas": "Agosto/2026 — Agente de Vendas de Ponta a Ponta",
 }
 
-CABECALHO = """<!-- ATENÇÃO: arquivo gerado automaticamente por .github/scripts/gera_projetos.py
+CABECALHO = """<!-- ATENÇÃO: arquivo gerado por .github/scripts/gera_projetos.py
      a partir dos cartões em <desafio>/projetos/<usuario>/README.md.
-     Não edite à mão: qualquer alteração é sobrescrita no próximo merge.
+     Não edite à mão: qualquer alteração some na próxima geração do mural.
      Para entrar no mural, envie o seu cartão — veja o COMO-SUBMETER.md. -->
 
 # Projetos da comunidade
@@ -52,8 +53,8 @@ RODAPE = """
 ---
 
 Quer o seu projeto aqui? O passo a passo está em
-[COMO-SUBMETER.md](COMO-SUBMETER.md). Leva uns 20 minutos, e o mural se
-atualiza sozinho assim que o seu pull request entra.
+[COMO-SUBMETER.md](COMO-SUBMETER.md). Leva uns 20 minutos, e o seu projeto
+entra no mural logo depois que o seu pull request é aceito.
 """
 
 

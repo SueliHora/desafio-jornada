@@ -37,7 +37,7 @@ Confira antes de marcar como pronto para revisão. É o mesmo checklist do `COMO
 - [ ] A pasta tem o meu nome de usuário do GitHub, em letras minúsculas, igual ao campo `usuario`
 - [ ] A pasta está dentro do mês correto
 - [ ] Não incluí código do projeto aqui, apenas o cartão e as imagens
-- [ ] Não editei o `PROJETOS.md` (ele é gerado automaticamente depois do merge)
+- [ ] Não editei o `PROJETOS.md` (ele é gerado a partir dos cartões depois do merge)
 - [ ] Não incluí nenhum dado real ou informação sensível
 - [ ] O case é inventado por mim, com negócio, cliente e produto batizados
 

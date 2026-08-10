@@ -8,7 +8,7 @@ O seu projeto completo vive no **seu** repositório, no seu perfil do GitHub. É
 
 O que você submete aqui é o **cartão do seu projeto**: uma pasta com o seu nome de usuário contendo um README de apresentação e as imagens que quiser. Esse cartão entra na galeria do mês e aponta para o seu repositório completo.
 
-**O texto do cartão é livre.** Escreva do seu jeito, com as seções que fizerem sentido para o seu projeto, com quantas imagens quiser. A única parte obrigatória é o bloco de metadados no topo do arquivo: é dele que sai o [mural de projetos](PROJETOS.md), que se atualiza sozinho a cada submissão.
+**O texto do cartão é livre.** Escreva do seu jeito, com as seções que fizerem sentido para o seu projeto, com quantas imagens quiser. A única parte obrigatória é o bloco de metadados no topo do arquivo: é dele que sai a sua linha no [mural de projetos](PROJETOS.md).
 
 | O que fica no SEU repositório | O que entra AQUI (galeria) |
 |---|---|
@@ -37,7 +37,7 @@ Siga na ordem. O processo inteiro leva uns 20 minutos e é, ele mesmo, uma prát
 
 8. **Aguarde a revisão.** Assim que o PR abre, uma validação automática confere o bloco de metadados e avisa no próprio PR se faltou alguma coisa. Passando nela, a revisão humana olha o conteúdo do projeto. Se algo precisar de ajuste, comentamos no PR, como em qualquer revisão de código do mundo real
 
-9. **Merge feito, você está na galeria.** O [mural de projetos](PROJETOS.md) se atualiza sozinho em seguida, com a sua linha montada a partir dos metadados do cartão. Seu nome entra na lista de contribuidores do repositório da Jornada de Dados e seu projeto fica visível para toda a comunidade
+9. **Merge feito, você está na galeria.** O [mural de projetos](PROJETOS.md) é atualizado em seguida pela manutenção do repositório, com a sua linha montada a partir dos metadados do cartão. Seu nome entra na lista de contribuidores do repositório da Jornada de Dados e seu projeto fica visível para toda a comunidade
 
 ## Checklist antes de abrir o PR
 

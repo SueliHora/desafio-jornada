@@ -50,7 +50,7 @@ O seu projeto completo vive no **seu** repositório. O que entra aqui é só o *
 |---|---|
 | Código, documentação, histórico de commits, CI | Uma pasta com o seu usuário, um README de apresentação e as imagens que quiser |
 
-O texto do cartão é livre: escreva do seu jeito. A única parte obrigatória é o bloco de metadados no topo, e é dele que sai automaticamente a sua linha no mural de **[PROJETOS.md](PROJETOS.md)**.
+O texto do cartão é livre: escreva do seu jeito. A única parte obrigatória é o bloco de metadados no topo, e é dele que sai a sua linha no mural de **[PROJETOS.md](PROJETOS.md)**.
 
 O caminho é o mesmo de qualquer contribuição de código no mundo real:
 

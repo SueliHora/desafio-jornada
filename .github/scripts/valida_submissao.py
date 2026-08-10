@@ -135,7 +135,7 @@ def main():
             + "\n".join(f"  - `{a}`" for a in sorted(fora)[:20])
             + "\n\nSubmissão de cartão só altera arquivos dentro da sua pasta. "
             "Código do projeto fica no seu repositório, e o `PROJETOS.md` é "
-            "gerado automaticamente depois do merge."
+            "gerado a partir dos cartões depois do merge."
         )
 
     for chave, pasta in cartoes.items():
