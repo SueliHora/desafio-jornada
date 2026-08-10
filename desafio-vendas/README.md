@@ -2,139 +2,137 @@
 
 ## O que é este desafio
 
-Este repositório é um convite para você construir um produto de verdade com IA. Não um chatbot de demonstração, mas um sistema completo de atendimento e vendas, do primeiro "oi" do cliente até o documento final emitido, passando por recomendação, pagamento e aprovação humana.
+Este repositório é um convite para você construir um produto de verdade com IA. Não um chatbot de demonstração, mas um sistema de atendimento e vendas que sai do primeiro "oi" do cliente e chega até o fim: recomendação, pedido, pagamento, documento emitido.
 
-Aqui você não vai encontrar código pronto nem respostas. Vai encontrar um pedido de cliente, um conjunto de garantias que o produto precisa oferecer e requisitos de processo de engenharia. Todas as decisões são suas: arquitetura, stack, escopo e organização do seu harness. É assim que funciona no mundo real: o cliente sabe o que quer, mas não sabe como se constrói. Quem decide como construir é você.
+Aqui você não vai encontrar código pronto, lista de tarefas nem resposta certa. Vai encontrar **um pedido de cliente**. Traduzir esse pedido em escopo, arquitetura e código é o trabalho. Todas as decisões são suas: domínio, stack, quantidade de agentes, ferramentas, recorte da primeira versão. É assim que funciona no mundo real: o cliente sabe o que quer, mas não sabe como se constrói. Quem decide como construir é você.
 
-> **Regra nº 1 do desafio: o seu projeto não pode ser a Vendinha.**
-> A Vendinha é o exemplo trabalhado no workshop, e as decisões dela estão no vídeo. Escolha o **seu** domínio: petshop, clínica, imobiliária, oficina, loja de instrumentos, consultoria... Qualquer negócio em que o cliente chega conversando sem saber o que pedir, e em que existe pelo menos uma etapa em que errar é inaceitável.
+> **Regra nº 1 do desafio: o case é seu, e é inédito.**
+> Não existe gabarito para copiar. Escolha o negócio: petshop, clínica, imobiliária, oficina, loja de instrumentos, consultoria... Qualquer ramo em que o cliente chega conversando sem saber o que pedir, e em que existe pelo menos uma etapa em que errar é inaceitável. E não pare no ramo: **batize o negócio, batize o cliente, batize o produto.**
 
 ---
 
-## O pedido do cliente
+# Parte 1 — O pedido do cliente
 
-Imagine que eu sou o dono de um pequeno negócio e cheguei até você com a seguinte conversa:
+## A conversa
 
-"Meu negócio vende coisas que exigem conversa. Meu cliente não chega sabendo o nome do produto. Ele chega com uma necessidade: quer um presente para alguém, quer resolver um problema, quer uma recomendação de quem entende. O meu site atual tem filtros e categorias, e isso não funciona. O cliente não sabe traduzir o que ele quer em filtros, desiste e vai embora.
+Imagine que eu sou o dono de um pequeno negócio e cheguei até você com esta conversa:
 
-Eu quero um atendimento que converse de verdade. Que entenda o que o cliente precisa mesmo quando ele não sabe explicar direito, que recomende bem, que conduza a venda até o final: pedido feito, pagamento realizado, documento emitido, cliente satisfeito.
+"Meu negócio vende coisas que exigem conversa. Meu cliente não chega sabendo o nome do produto. Ele chega com uma necessidade: quer um presente para alguém, quer resolver um problema, quer a recomendação de quem entende. O meu site tem filtros e categorias, e isso não funciona. O cliente não sabe traduzir o que ele quer em filtro, desiste e vai embora.
 
-Mas eu tenho medos, e preciso que você me leve a sério neles. Tenho medo de o robô inventar coisas sobre os meus produtos. Tenho medo de alguém espertinho enganar o robô na conversa. Tenho medo de sair documento importante sem ninguém da minha equipe ter olhado antes, porque documento emitido não tem volta. Tenho medo de a conta dessa inteligência artificial vir gigante no fim do mês. E tenho medo de dado pessoal dos meus clientes vazar em algum canto do sistema.
+Eu quero um atendimento que converse de verdade. Que entenda o que o cliente precisa mesmo quando ele não sabe explicar direito, que recomende bem, e que conduza a venda até o final.
+
+Mas eu tenho medos, e preciso que você me leve a sério neles. Tenho medo de o robô inventar coisas sobre os meus produtos. Tenho medo de alguém espertinho enganar o robô na conversa. Tenho medo de sair documento importante sem ninguém da minha equipe ter olhado antes. Tenho medo de a conta dessa inteligência artificial vir gigante no fim do mês. E tenho medo de dado dos meus clientes vazar em algum canto do sistema.
 
 Ah, e se der problema, eu quero conseguir entender o que aconteceu. Não aceito um sistema que funciona 'por mágica'."
 
-Cliente fala de resultado e de medo, nunca de framework. Transformar essa conversa em requisitos, arquitetura e código é o seu trabalho. A tabela abaixo ajuda a começar:
+## O que eu quero no produto
 
-| Medo do cliente | Sua tarefa como engenheiro |
+Estes são os meus desejos, do jeito que eu sei falar. São amplos de propósito: o que cada um significa **no seu domínio**, e como cada um vira sistema, é você quem define.
+
+- Quero um agente de IA capaz de compreender o meu catálogo e recomendar o melhor produto de acordo com o que o cliente busca, mesmo quando o cliente descreve por necessidade e não por nome
+- Quero que estoque, preço e prazo que o agente informa estejam sempre de acordo com o meu banco de dados. Nada saindo da cabeça do robô
+- Quero que a conversa leve a venda até o fim, e não pare no "posso te ajudar em mais alguma coisa?"
+- Quero aprovar, eu ou alguém da minha equipe, aquilo que não tem volta depois de feito
+- Quero conseguir olhar um atendimento depois e entender o que aconteceu ali dentro
+- Quero saber quanto essa inteligência artificial me custa e ter controle sobre isso
+- Quero que o dado do meu cliente esteja protegido em qualquer canto do sistema
+- Quero que a minha equipe, e não só você, consiga colocar isso para rodar
+
+**Duas restrições minhas:** nada de dinheiro de verdade (use os ambientes de teste dos meios de pagamento) e nada de documento com validade real (uma simulação fiel resolve).
+
+> Cliente fala de resultado e de medo, nunca de framework. Se algum desses desejos parece vago demais para virar código, ótimo: **extrair requisito de cliente leigo é parte do desafio.** Pergunte nas Discussions e eu respondo como o cliente responderia.
+
+---
+
+# Parte 2 — O projeto de engenharia
+
+O produto é metade do desafio. A outra metade é **como você constrói**, porque é isso que separa um script pessoal de um projeto que outra pessoa consegue entender, revisar e continuar.
+
+O projeto nasce de documentação, não de código. Antes de implementar, queremos ver o seu pensamento registrado. Formato, ferramenta e nível de detalhe são seus: o que segue é o que cada peça precisa responder, não um modelo para preencher.
+
+## 1. O seu case, com nome e sobrenome
+
+Antes de qualquer documento, **invente o case inteiro.** Não é escolher um ramo genérico e escrever "o cliente" e "o produto" pelo resto do repositório: é criar um cenário que existe, com nomes próprios, e sustentar esses nomes em toda a documentação e no código.
+
+Dê nome a tudo o que aparecer no seu projeto:
+
+- **O negócio.** Fique livre para criar os nomes
+- **O cliente que te contratou.** Quem é o dono, o que ele faz, por que ele está preocupado. É essa pessoa que vai aparecer nos seus ADRs quando você escrever "descartamos X porque a Dona Marta precisa aprovar antes"
+- **O produto que você está construindo.** Um nome, um estilo de conversa, uma identidade. Você escolhe!
+- **Quem é atendido.** É importante saber o público que usará seu produto. Deixe isso evidenciado.
+
+Case genérico gera documento genérico e código genérico. Case com nome próprio força decisão concreta: quando o negócio é a Pet&Cia e ela vende ração por peso, você para de escrever requisito abstrato e começa a resolver problema de verdade. E é o que faz o seu repositório parecer um produto, e não um exercício.
+
+> Você é livre inclusive no tom: o case pode ser sério, regional, engraçado. O que ele não pode ser é vago.
+
+## 2. Escopo definido: PRD, SPECs e ADRs
+
+| Documento | O que ele responde |
 |---|---|
-| "O robô pode inventar coisas sobre meus produtos" | Garantir que toda afirmação do agente tenha origem em dados verificáveis do sistema |
-| "Alguém pode enganar o robô na conversa" | Garantir que manipulação por conversa não execute nada fora do permitido, por arquitetura e não por pedido no prompt |
-| "Pode sair documento sem ninguém revisar" | Identificar o que é irreversível no seu domínio e desenhar onde e como um humano aprova, com registro |
-| "A conta da IA pode vir gigante" | Definir teto de custo por atendimento, configurável |
-| "Dado de cliente pode vazar" | Garantir que dados pessoais nunca apareçam legíveis em logs e rastros |
-| "Não aceito sistema que funciona por mágica" | Garantir rastreabilidade completa de cada atendimento |
+| **PRD** — documento de produto | Que problema estamos resolvendo, para quem, o que entra na primeira versão, **o que fica de fora** e como o sucesso será medido |
+| **SPECs** — especificações | O que exatamente será implementado, com o comportamento esperado escrito sem ambiguidade, de forma que outra pessoa (ou um agente de código) consiga implementar sem adivinhar |
+| **ADRs** — registro de decisões | As decisões de arquitetura que você tomou, cada uma com as alternativas consideradas e as consequências que você aceitou |
+
+O ADR é o documento que mais vale no seu portfólio. Decisão sem alternativa descartada não é decisão, é acaso.
+
+## 3. Arquitetura do projeto
+
+Um desenho e um texto curto explicando como o sistema se sustenta: quantos agentes existem e por quê, o que cada um pode e não pode fazer, onde ficam os dados, onde entra o humano, o que acontece quando algo falha no meio do caminho.
+
+Não existe arquitetura certa aqui. Existe arquitetura **explicada**.
+
+## 4. Estrutura do repositório e o seu Agent Harness
+
+Você vai construir este projeto com agentes de código, e queremos ver isso explícito. Escolha o seu harness — **Claude Code, Codex, Cursor, Kimi, Gemini CLI, Aider, o que for** — e deixe o repositório preparado para ele trabalhar bem:
+
+- Qual harness você escolheu e por quê
+- O arquivo de contexto do projeto (`CLAUDE.md`, `AGENTS.md`, ou o equivalente do seu): o que um agente precisa saber para não quebrar o seu projeto
+- Como o repositório está organizado: onde vive a documentação, onde vive o código, onde vivem os testes
+- O que você automatizou para o agente (comandos, skills, hooks, regras) e o que você deliberadamente **não** deixou na mão dele
+- Como você revisa o que o agente escreve
+
+Essa seção não é enfeite. Saber dirigir um agente de código, com contexto e limites bem definidos, é a habilidade que este desafio existe para treinar.
+
+## 5. Processo visível
+
+O histórico do repositório deve contar a história do projeto: branch principal protegida, mudanças entrando por pull request, commits que se entendem, validações automáticas que barram o que não deveria passar. Quais validações rodar é escolha sua — que elas existam e bloqueiem, não é.
 
 ---
 
-## As garantias que o produto precisa oferecer
+## Antes de codar: as perguntas que valem mais que o código
 
-Independente do domínio e das ferramentas escolhidas, o produto final precisa oferecer as garantias abaixo. **Como** garantir cada uma é decisão sua. O que não é negociável é que elas existam e que você consiga demonstrá-las.
-
-| # | Garantia | O que precisa ser verdade no seu produto |
-|---|---|---|
-| G1 | Nenhum fato inventado | Toda afirmação sobre produtos ou serviços tem origem em dado verificável do sistema |
-| G2 | Preço nunca vem do modelo | Valores, totais e cálculos financeiros nunca são gerados pelo modelo de linguagem |
-| G3 | Nenhuma ação sem permissão | O agente só executa o que foi explicitamente permitido; segurança garantida pela construção, não pelo comportamento do modelo |
-| G4 | Nada irreversível sem humano | Ações sem volta passam por aprovação humana registrada (quem e quando) |
-| G5 | Dados pessoais protegidos | Nome, CPF, e-mail e afins nunca legíveis em logs ou rastros de execução |
-| G6 | Custo sob controle | Teto de custo por atendimento, configurado e respeitado |
-| G7 | Tudo rastreável | Qualquer atendimento pode ser reconstruído: o que o agente decidiu, consultou, executou e gastou |
-| G8 | Qualidade que se prova | Critérios objetivos de qualidade definidos antes de implementar, versionados no repositório e verificados automaticamente; a qualidade não regride silenciosamente |
-| G9 | Qualquer pessoa roda | O projeto sobe na máquina de outra pessoa em poucos minutos, seguindo o seu próprio repositório, sem dados reais |
-
-**Restrições do cliente:**
-- Nada de dinheiro de verdade. Use ambientes de teste dos meios de pagamento
-- Nada de documento com validade real. Uma simulação fiel resolve
-
----
-
-## Requisitos de processo
-
-Este desafio não é só sobre o produto final. É sobre como você trabalha. Os itens abaixo são requisitos do projeto. Não daremos os detalhes de implementação: pesquisar, decidir e configurar faz parte do desafio.
-
-### O que o seu repositório deve ter
-
-- [ ] Branch principal protegida: nenhuma mudança entra sem pull request
-- [ ] Validações automáticas que bloqueiam o que não estiver de acordo (quais validações rodar, como testes, análise de código e verificação de qualidade do agente, é escolha sua, mas elas precisam existir e barrar)
-- [ ] Padrão de commits consistente, que permita entender o histórico do projeto
-- [ ] Pull requests que contam uma história: o que foi feito, por quê, e com evidência de que funciona
-- [ ] Processo visível: qualquer pessoa que abra o repositório entende como o projeto foi construído
-
-### Documentação exigida antes do código
-
-O projeto nasce de documentação, não de código. Antes de implementar, o repositório deve conter:
-
-| Documento | O que deve responder |
-|---|---|
-| Mapeamento da jornada | Quais são as etapas da jornada do seu cliente, e em cada uma: a IA entra ou não entra? Por quê? |
-| Levantamento de riscos | Quais riscos existem no seu domínio e como cada um será tratado |
-| Documento de produto | O que será construído, o que fica de fora, e como o sucesso será medido |
-| Registro de decisões | As decisões de arquitetura tomadas, com as alternativas consideradas e as consequências aceitas |
-| Especificações | O que será implementado, com cenários de comportamento esperado escritos sem ambiguidade, de forma que qualquer pessoa, ou qualquer agente de código, entenda |
-
-Como organizar esses documentos, quais formatos e ferramentas usar, e como estruturar o seu ambiente de trabalho com agentes de código: tudo é decisão sua. O que pedimos é que as decisões estejam registradas.
-
----
-
-## Discovery: o que você precisa responder antes de codar
-
-Sente com um arquivo em branco e responda com honestidade. Estas perguntas são o coração do método. As respostas da Vendinha estão no workshop; as do seu domínio, só você pode dar.
+Sente com um arquivo em branco e responda com honestidade. Estas respostas são o seu discovery, e viram o seu PRD:
 
 - [ ] Qual é a jornada completa do cliente no meu domínio, da chegada ao pós-venda?
 - [ ] Em cada etapa dessa jornada: linguagem natural gera **valor** ou gera **risco**?
 - [ ] O que de pior pode acontecer se o modelo errar em cada etapa?
 - [ ] O que, no meu fluxo, é **irreversível**, e quem deveria aprovar antes?
 - [ ] Onde o meu cliente precisa de **garantia absoluta**, e não de resposta plausível?
-- [ ] Como vou saber, **com números**, que o atendimento está bom, antes de implementar?
+- [ ] Como vou saber, **com números**, que o atendimento está bom?
 - [ ] O que fica de fora da primeira versão? (Lembre: escopo é decisão de risco, não preguiça)
-
-## O que você vai precisar pesquisar e decidir
-
-| Decisão | Perguntas para se fazer |
-|---|---|
-| Domínio e escopo | Que negócio? Que jornada? O que entra na primeira versão? |
-| Stack | Que linguagem, frameworks, banco de dados, modelo de linguagem? Por quê? |
-| Arquitetura do agente | Um agente ou vários? Que ferramentas cada um pode usar? Como limitar permissões? |
-| Ponto de aprovação humana | O que é irreversível? Como pausar o fluxo, guardar o estado e retomar após aprovação? |
-| Observabilidade | Como rastrear cada atendimento? Como proteger dados pessoais nos rastros? |
-| Qualidade e testes | Como medir a qualidade das conversas? Como impedir regressão a cada mudança? |
-| Proteção do repositório | Que validações rodar? Como configurar para bloquear o que não passa? |
-| Harness de desenvolvimento | Como organizar seu trabalho com agentes de código? O que documentar para eles trabalharem bem? |
-
-Cada uma dessas decisões merece registro no seu repositório, com as alternativas que você considerou.
 
 ---
 
 ## Como participar
 
-1. **Assista ao workshop completo da Vendinha** para ver o método aplicado de ponta a ponta
-2. **Escolha o seu domínio** (diferente da Vendinha)
+1. **Assista ao vídeo de abertura dos desafios** na plataforma da Jornada de Dados: o intuito desta série de projetos e as instruções gerais de como prosseguir
+2. **Invente o seu case.** Negócio, cliente, produto e personas, tudo com nome próprio, do seu jeito
 3. **Crie o seu repositório público.** Este repositório aqui é o enunciado; o trabalho acontece no seu
 4. **Submeta o cartão do seu projeto à galeria** deste repositório, abrindo um pull request que adiciona a sua pasta com o cartão, seguindo o passo a passo do [COMO-SUBMETER.md](../COMO-SUBMETER.md) (esse PR já é a sua primeira prática do fluxo)
 5. **Faça o discovery, documente, construa.** Nessa ordem
-6. **Dúvidas sobre o pedido?** Pergunte na categoria [**Como construir**](https://github.com/suajornadadedados/desafio-jornada/discussions/new?category=como-construir) das Discussions. Eu respondo como o cliente responderia: sobre o negócio, as prioridades e os medos, nunca sobre qual tecnologia usar, porque o cliente não sabe o que é um banco de dados. Extrair requisitos de um cliente leigo é parte do desafio.
+6. **Dúvidas sobre o pedido?** Pergunte na categoria [**Como construir**](https://github.com/suajornadadedados/desafio-jornada/discussions/new?category=como-construir) das Discussions. Eu respondo como o cliente responderia: sobre o negócio, as prioridades e os medos, nunca sobre qual tecnologia usar, porque o cliente não sabe o que é um banco de dados
 
 ## Datas e o que acontece com os projetos
 
 | Data | O que acontece |
 |---|---|
-| 11/08/2026 | Desafio aberto, junto com o lançamento do workshop |
-| Ao longo do mês | Perguntas respondidas nas Discussions; projetos na galeria podem ser comentados na live exclusiva para alunos |
-| **28/08/2026** | Data de referência do desafio: submeta o seu cartão à galeria e avance o quanto conseguir |
-| Semana final de agosto | Projetos que mais se destacarem aparecem no vídeo de encerramento no canal e nas redes da Jornada, com os devidos créditos |
-| Depois de 28/08 | O desafio continua aberto: galeria recebendo cartões e perguntas sendo respondidas nas Discussions. A data existe para dar ritmo; o método fica |
+| 11/08/2026 | Desafio aberto, junto com o vídeo de abertura na plataforma |
+| Ao longo do desafio | Perguntas respondidas nas Discussions; projetos na galeria podem ser comentados na live exclusiva para alunos |
+| **05/09/2026** | Data de referência do desafio: submeta o seu cartão à galeria e avance o quanto conseguir |
+| Semana seguinte | Projetos que mais se destacarem aparecem no vídeo de encerramento no canal e nas redes da Jornada, com os devidos créditos |
+| Depois de 05/09 | O desafio continua aberto: galeria recebendo cartões e perguntas sendo respondidas nas Discussions. A data existe para dar ritmo; o método fica |
 
-Projetos em diferentes estágios são bem-vindos. Um discovery bem feito com uma especificação sólida já é uma entrega valiosa, mesmo que a implementação esteja no começo. E lembre: o seu repositório fica público no seu perfil. Um projeto completo, documentado e com processo visível vale mais em um portfólio do que dez tutoriais seguidos.
+Projetos em diferentes estágios são bem-vindos. Um discovery bem feito, com PRD e ADRs sólidos, já é uma entrega valiosa mesmo com a implementação no começo. E lembre: o seu repositório fica público no seu perfil. Um projeto documentado, com decisões defendidas e processo visível, vale mais em um portfólio do que dez tutoriais seguidos.
 
 ---
 

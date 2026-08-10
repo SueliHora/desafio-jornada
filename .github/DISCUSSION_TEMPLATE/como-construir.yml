@@ -2,7 +2,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        **Este é o lugar de toda dúvida do desafio:** o que o cliente pediu (escopo, garantias, prazos), como construir (arquitetura, stack, ferramenta, erro) ou como submeter o seu cartão.
+        **Este é o lugar de toda dúvida do desafio:** o que o cliente pediu (escopo, prioridades, prazos), como construir (arquitetura, stack, ferramenta, erro) ou como submeter o seu cartão.
 
         Antes de abrir, dê uma busca por aqui: talvez alguém já tenha passado pela mesma dúvida.
 
@@ -41,21 +41,19 @@ body:
       required: true
 
   - type: dropdown
-    id: garantia
+    id: assunto
     attributes:
-      label: Qual garantia isso toca
-      description: Se a dúvida está ligada a uma das garantias do desafio, marque qual. Ajuda quem for responder.
+      label: Qual parte do desafio isso toca
+      description: Marque o que se aplica. Ajuda quem for responder.
       multiple: true
       options:
-        - "G1 — Nenhum fato inventado"
-        - "G2 — Preço nunca vem do modelo"
-        - "G3 — Nenhuma ação sem permissão"
-        - "G4 — Nada irreversível sem humano"
-        - "G5 — Dados pessoais protegidos"
-        - "G6 — Custo sob controle"
-        - "G7 — Tudo rastreável"
-        - "G8 — Qualidade que se prova"
-        - "G9 — Qualquer pessoa roda"
+        - "Pedido do cliente — entender o que ele quis dizer"
+        - "O meu case — negócio, cliente, produto, personas"
+        - "Escopo — PRD, SPECs, ADRs"
+        - "Arquitetura do projeto"
+        - "Estrutura do repositório e Agent Harness"
+        - "Processo — branch, PR, commits, validações"
+        - "Submissão do cartão à galeria"
         - "Nenhuma / não sei ainda"
 
   - type: textarea

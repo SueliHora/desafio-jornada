@@ -13,7 +13,7 @@ O que você submete aqui é o **cartão do seu projeto**: uma pasta com o seu no
 | O que fica no SEU repositório | O que entra AQUI (galeria) |
 |---|---|
 | Código completo do projeto | Uma pasta com o seu nome de usuário |
-| Toda a documentação (jornada, riscos, PRD, decisões, specs) | Um README de apresentação (o cartão) |
+| Toda a documentação (PRD, SPECs, ADRs, arquitetura) | Um README de apresentação (o cartão) |
 | Histórico de commits, PRs e evolução | Link para o seu repositório completo |
 | CI, validações e proteções que você configurou | Um diagrama ou imagem do seu projeto (opcional, mas recomendado) |
 
@@ -93,8 +93,9 @@ Não existe modelo obrigatório para o corpo do cartão: escreva como quiser. Se
 - O projeto em três linhas: o que o seu agente faz, para quem, que problema resolve
 - A arquitetura, de preferência com um diagrama: quantos agentes, o que cada um pode fazer, onde o humano entra
 - A stack escolhida, com uma frase sobre o porquê de cada escolha
+- O harness que você usou (Claude Code, Codex, Cursor, Kimi...) e como preparou o repositório para ele
 - As três decisões de engenharia mais difíceis, com as alternativas que você descartou
-- Como você atendeu às garantias do desafio (G1 a G9)
+- Como você tratou os medos do cliente: o que virou decisão de arquitetura e o que ficou para depois
 - O que você aprendeu: o que foi mais difícil, o que faria diferente
 
 Seja generoso na última. É a parte que a comunidade mais lê.
@@ -103,7 +104,7 @@ Seja generoso na última. É a parte que a comunidade mais lê.
 
 - Um cartão por pessoa por mês. Você pode participar de todos os meses, e quem participa de vários entra no Hall dos Construtores no README principal
 - Projetos em qualquer estágio são bem-vindos. Um discovery bem documentado já é uma submissão válida; atualize o cartão via novo PR conforme o projeto evolui
-- O cartão deve ser do seu próprio projeto, em domínio diferente do exemplo trabalhado no workshop do mês
+- O cartão deve ser do seu próprio projeto, com um case inventado por você: negócio, cliente e produto com nome próprio
 - Seja generoso na seção de aprendizados. É a parte que a comunidade mais lê
 
 ## Depois do merge

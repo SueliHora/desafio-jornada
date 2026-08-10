@@ -40,7 +40,7 @@ Confira antes de marcar como pronto para revisão. É o mesmo checklist do `COMO
 - [ ] Não incluí código do projeto aqui, apenas o cartão e as imagens
 - [ ] Não editei o `PROJETOS.md` (ele é gerado automaticamente depois do merge)
 - [ ] Não incluí nenhum dado real ou informação sensível
-- [ ] O meu projeto não é o exemplo trabalhado no workshop do mês
+- [ ] O case é inventado por mim, com negócio, cliente e produto batizados
 
 ### Sobre o seu trabalho
 

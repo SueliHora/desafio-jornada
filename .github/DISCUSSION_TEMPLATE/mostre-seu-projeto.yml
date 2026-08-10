@@ -17,9 +17,9 @@ body:
   - type: input
     id: dominio
     attributes:
-      label: Domínio que você escolheu
-      description: Lembrando a regra nº 1 do desafio de agosto — o seu projeto não pode ser a Vendinha.
-      placeholder: "Petshop, clínica, imobiliária, oficina, loja de instrumentos..."
+      label: O case que você inventou
+      description: Lembrando a regra nº 1 — o case é seu e é inédito. Conte o negócio e o nome que você deu a ele.
+      placeholder: "Pet&Cia, um petshop de bairro / Clínica Bem Estar / Marcenaria do Tião..."
     validations:
       required: true
 
@@ -44,7 +44,7 @@ body:
     attributes:
       label: Onde você quer feedback
       description: Aponte o lugar exato. "Feedback geral" costuma não render nada.
-      placeholder: "Quero opinião sobre como isolei a camada de preço para garantir a G2."
+      placeholder: "Quero opinião sobre como isolei a camada de preço para o modelo nunca calcular valor."
     validations:
       required: true
 

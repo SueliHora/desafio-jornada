@@ -14,8 +14,8 @@ Este não é um repositório de exercícios. É um repositório de **portfólios
 
 Se é a sua primeira vez neste repositório, faça nesta ordem:
 
-1. **Leia o desafio do mês:** [Agente de Vendas de Ponta a Ponta](desafio-vendas/README.md). Lá estão o pedido do cliente, as garantias que o produto precisa oferecer e as datas
-2. **Assista ao workshop** no [canal da Jornada de Dados](https://www.youtube.com/@JornadaDeDados). Ele mostra o método aplicado em um projeto de exemplo, do começo ao fim
+1. **Leia o desafio do mês:** [Agente de Vendas de Ponta a Ponta](desafio-vendas/README.md). Lá estão o pedido do cliente, o que o projeto de engenharia precisa entregar e as datas
+2. **Assista ao vídeo de abertura dos desafios** na [plataforma da Jornada de Dados](https://suajornadadedados.com.br/). Ele explica o intuito desta série de projetos e como prosseguir
 3. **Escolha o seu domínio e comece a construir** no seu próprio repositório. Não precisa esperar estar pronto para aparecer: discovery bem documentado já é uma submissão válida
 
 Travou em algo? A seção [Onde falar com a comunidade](#onde-falar-com-a-comunidade) diz exatamente onde perguntar.
@@ -24,8 +24,8 @@ Travou em algo? A seção [Onde falar com a comunidade](#onde-falar-com-a-comuni
 
 | Etapa | O que acontece |
 |---|---|
-| 1. Lançamento do mês | Todo mês publicamos um novo desafio nesta página, junto com um workshop completo no canal da Jornada de Dados mostrando o método aplicado em um projeto de exemplo |
-| 2. Você constrói | Você escolhe o seu domínio, faz o discovery, documenta, decide e constrói no **seu** repositório, no seu perfil do GitHub |
+| 1. Lançamento do mês | Todo mês publicamos um novo desafio nesta página, com o pedido de um cliente e o que o seu projeto de engenharia precisa entregar |
+| 2. Você constrói | Você inventa o seu case, faz o discovery, documenta, decide e constrói no **seu** repositório, no seu perfil do GitHub |
 | 3. Você publica | Você compartilha o projeto e a experiência no LinkedIn e na plataforma da Jornada (veja a regra da visibilidade abaixo) |
 | 4. Você submete | Você adiciona o cartão do seu projeto à galeria do mês, com os links das publicações, seguindo o passo a passo do arquivo [COMO-SUBMETER.md](COMO-SUBMETER.md) |
 | 5. A comunidade reconhece | Projetos da galeria podem ser comentados nas lives exclusivas para alunos, e os destaques aparecem no vídeo de encerramento do mês e nas redes da Jornada |
@@ -40,7 +40,7 @@ Travou em algo? A seção [Onde falar com a comunidade](#onde-falar-com-a-comuni
 | Novembro/2026 | A anunciar | Em breve |
 | Dezembro/2026 | A anunciar | Em breve |
 
-Cada pasta de mês contém o README do desafio (o pedido, as garantias, os requisitos e as datas) e a pasta de projetos com a galeria da comunidade.
+Cada pasta de mês contém o README do desafio (o pedido do cliente, o que entregar como projeto de engenharia e as datas) e a pasta de projetos com a galeria da comunidade.
 
 ## Como submeter o seu projeto
 
@@ -78,7 +78,7 @@ Cada tipo de conversa tem um lugar. Achar o lugar certo faz a sua resposta chega
 
 | O que você quer | Onde ir |
 |---|---|
-| Entender **o que o cliente quis dizer** (escopo, garantias, prazos) | Discussion → [**Como construir**](https://github.com/suajornadadedados/desafio-jornada/discussions/new?category=como-construir) |
+| Entender **o que o cliente quis dizer** (escopo, prioridades, prazos) | Discussion → [**Como construir**](https://github.com/suajornadadedados/desafio-jornada/discussions/new?category=como-construir) |
 | Saber **como construir** (arquitetura, stack, um erro que não passa) | Discussion → [**Como construir**](https://github.com/suajornadadedados/desafio-jornada/discussions/new?category=como-construir) |
 | **Travou na submissão** (fork, branch, pasta, cartão, PR) | Discussion → [**Como construir**](https://github.com/suajornadadedados/desafio-jornada/discussions/new?category=como-construir) |
 | **Mostrar o que já construiu** e pedir feedback dos colegas | Discussion → [**Mostre seu projeto**](https://github.com/suajornadadedados/desafio-jornada/discussions/new?category=mostre-seu-projeto) |
