@@ -21,7 +21,6 @@ Marque abaixo o tipo do seu PR e apague a seção que não se aplica.
 | **Seu usuário do GitHub** | @ |
 | **Domínio escolhido** | <!-- petshop, clínica, imobiliária, oficina... --> |
 | **Repositório do projeto** | <!-- link público --> |
-| **Status** | <!-- Discovery / Em construção / Funcionando / Em produção --> |
 
 **O projeto em uma frase:**
 

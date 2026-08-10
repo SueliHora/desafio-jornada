@@ -5,8 +5,8 @@ Gera o `PROJETOS.md`: o mural de todos os projetos da comunidade.
 O mural é uma função das pastas de cartão que existem no repositório. Ele é
 reescrito inteiro a cada execução, nunca acrescentado — assim rodar duas vezes
 dá o mesmo resultado, ninguém precisa resolver conflito e um cartão atualizado
-(status que muda de "Discovery" para "Funcionando", por exemplo) aparece no
-mural sozinho, sem ninguém editar tabela na mão.
+(um vídeo de demo que entrou depois, por exemplo) aparece no mural sozinho,
+sem ninguém editar tabela na mão.
 
 Uso:
     python gera_projetos.py [--conferir]
@@ -23,7 +23,6 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from cartao import (  # noqa: E402
     le_metadados,
     procura_cartoes,
-    status_canonico,
     utf8_no_console,
     valida_metadados,
 )
@@ -110,20 +109,19 @@ def monta():
     for desafio in ordem:
         rotulo = DESAFIOS.get(desafio, desafio)
         partes.append(f"\n## {rotulo}\n")
-        partes.append("| Projeto | Autor | Domínio | Status | Links |")
-        partes.append("|---|---|---|---|---|")
+        partes.append("| Projeto | Autor | Domínio | Links |")
+        partes.append("|---|---|---|---|")
         for usuario, dados in sorted(por_desafio[desafio], key=lambda x: x[0].lower()):
             cartao = f"{desafio}/projetos/{usuario}/README.md"
             partes.append(
                 "| [{projeto}]({cartao}) "
                 "| {autor} ([@{usuario}](https://github.com/{usuario})) "
-                "| {dominio} | {status} | {links} |".format(
+                "| {dominio} | {links} |".format(
                     projeto=escapa(dados["projeto"]),
                     cartao=cartao,
                     autor=escapa(dados["autor"]),
                     usuario=usuario,
                     dominio=escapa(dados["dominio"]),
-                    status=status_canonico(dados["status"]),
                     links=linha_de_links(dados),
                 )
             )

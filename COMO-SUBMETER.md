@@ -61,7 +61,6 @@ autor: Caio Machado
 usuario: caiomachado
 dominio: Petshop
 repositorio: https://github.com/caiomachado/agente-petshop
-status: Em construção
 linkedin: https://www.linkedin.com/posts/caiomachado_meu-projeto-do-desafio-share-7490415422425698304-LuUl
 plataforma: https://suajornadadedados.curseduca.pro/m/community/posts/a773a771-9319-4f51-8340-2358d8d9832d
 video: https://youtu.be/abcdefghijk
@@ -75,7 +74,6 @@ video: https://youtu.be/abcdefghijk
 | `usuario` | sim | Seu usuário do GitHub, em minúsculas. Precisa ser igual ao nome da pasta |
 | `dominio` | sim | O negócio que você escolheu: petshop, clínica, imobiliária... |
 | `repositorio` | sim | Link do seu repositório público no GitHub |
-| `status` | sim | Um destes, exatamente: `Discovery`, `Em construção`, `Funcionando`, `Em produção` |
 | `linkedin` | sim | Link do **post** sobre o projeto, começando com `https://www.linkedin.com/posts/` |
 | `plataforma` | sim | Link do seu post na comunidade, começando com `https://suajornadadedados.curseduca.pro/m/community/posts/` |
 | `video` | não | Uma demo em vídeo, se você gravou |

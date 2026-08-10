@@ -22,14 +22,11 @@ OBRIGATORIOS = [
     "usuario",
     "dominio",
     "repositorio",
-    "status",
     "linkedin",
     "plataforma",
 ]
 OPCIONAIS = ["video"]
 CONHECIDOS = OBRIGATORIOS + OPCIONAIS
-
-STATUS = ["Discovery", "Em construção", "Funcionando", "Em produção"]
 
 # Cada campo de link só precisa começar com o endereço certo e ter alguma coisa
 # depois dele. Não conferimos se o link abre, nem o formato do identificador: o
@@ -71,19 +68,6 @@ def utf8_no_console():
 def sem_acento(texto):
     nfkd = unicodedata.normalize("NFKD", texto)
     return "".join(c for c in nfkd if not unicodedata.combining(c)).lower()
-
-
-def status_canonico(valor):
-    """Aceita o status sem ligar para acento ou caixa, devolve a forma oficial.
-
-    O mural é gerado a partir daqui, então "em construcao" e "Em Construção"
-    precisam virar a mesma string, senão a coluna fica com três grafias.
-    """
-    alvo = sem_acento(valor.strip())
-    for oficial in STATUS:
-        if sem_acento(oficial) == alvo:
-            return oficial
-    return None
 
 
 def le_metadados(caminho):
@@ -190,13 +174,6 @@ def valida_metadados(dados, usuario_da_pasta=None):
                 f"O campo `usuario: {usuario}` não bate com o nome da pasta "
                 f"`{usuario_da_pasta}`. Os dois precisam ser o seu usuário do GitHub."
             )
-
-    status = dados.get("status", "")
-    if status and status_canonico(status) is None:
-        erros.append(
-            f"`status: {status}` não é um dos valores aceitos. "
-            f"Use um destes: {', '.join(STATUS)}."
-        )
 
     for campo in LINKS:
         if dados.get(campo):
