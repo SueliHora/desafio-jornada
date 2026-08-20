@@ -4,7 +4,7 @@ autor: Sueli Hora
 usuario: suelihora
 dominio: Distribuidora de rolamentos e vedações industriais
 repositorio: https://github.com/SueliHora/rash-rolamentos
-linkedin: https://www.linkedin.com/posts/suelihora_rash-rolamentos-desafio-jornada
+linkedin: https://www.linkedin.com/posts/sueli-da-hora_jornadadedados-inteligenciaartificial-engenhariadedados-ugcPost-7496332845825548288-Thb_
 plataforma: https://suajornadadedados.curseduca.pro/m/community/posts/suelihora-rash-rolamentos
 ---
 
