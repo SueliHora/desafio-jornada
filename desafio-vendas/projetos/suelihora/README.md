@@ -1,10 +1,10 @@
 ---
-projeto: "Rash Rolamentos: Agente de Vendas Técnicas com LLM & RAG"
+projeto: "Rash Rolamentos: Agente de Vendas Técnicas com LangGraph & HITL"
 autor: Sueli Hora
 usuario: suelihora
 dominio: Distribuidora de rolamentos industriais B2B
 repositorio: https://github.com/SueliHora/rash-rolamentos
-linkedin: https://www.linkedin.com/feed/update/urn:li:activity:7498560400624521217/
+linkedin: https://www.linkedin.com/posts/sueli-da-hora_jornadadedados-inteligenciaartificial-engenhariadedados-ugcPost-7496332845825548288-Thb_
 plataforma: https://suajornadadedados.curseduca.pro/m/community/posts/suelihora-rash-rolamentos
 ---
 
@@ -19,7 +19,7 @@ Desenvolvi um assistente com Inteligência Artificial que conversa de verdade co
 Como no setor industrial um erro de milímetro pode parar uma fábrica inteira, o projeto foi construído com rigor arquitetural estrito:
 
 1. **Fim das Alucinações (Catálogo Determinístico):** A IA não tem permissão para inventar preços ou tamanhos. Ela é estritamente obrigada a consultar um banco de dados relacional real (SQLite) via ferramentas parametrizadas.
-2. **Aprovação Humana (Human-in-the-Loop - HITL):** Se o cliente fizer um pedido de alto volume (ex: $\ge$ 10 unidades) ou solicitar desconto especial, a IA não toma a decisão sozinha: o pedido é retido para aprovação do Diretor Comercial em um painel gerencial dedicado.
+2. **Aprovação Humana (Human-in-the-Loop - HITL):** Se o cliente fizer um pedido de alto volume (ex: $\ge 10$ unidades) ou solicitar desconto especial, a IA não toma a decisão sozinha: o pedido é retido para aprovação do Diretor Comercial em um painel gerencial dedicado.
 
 ## Stack Tecnológica & Harness
 
@@ -35,5 +35,5 @@ O maior desafio foi garantir que o modelo de linguagem (LLM) nunca inventasse c�
 
 ## Links Oficiais
 
-* Aplicação ao Vivo: <https://rash-rolamentos.streamlit.app/>
-* Repositório do Código Fonte: <https://github.com/SueliHora/rash-rolamentos>
+* Aplicação ao Vivo: https://rash-rolamentos.streamlit.app/
+* Repositório do Código Fonte: https://github.com/SueliHora/rash-rolamentos
